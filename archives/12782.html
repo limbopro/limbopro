@@ -1,0 +1,2522 @@
+
+<!DOCTYPE HTML>
+<html class="small-scroll-bar no-js bg cool-transparent" lang="zh-Hans">
+<head>
+
+<link rel="preload" href="../usr/themes/handsome/assets/libs/bootstrap/css/bootstrap.min.css" as="style">
+<link rel="preload" href="../usr/themes/handsome/assets/css/origin/function.min.css" as="style">
+<link rel="preload" href="../usr/themes/handsome/assets/css/handsome.min.css" as="style">
+<link rel="preload" href="../usr/themes/handsome/assets/css/features/coolopacity.min.css" as="style">
+<link rel="preload" href="../usr/themes/handsome/assets/css/features/dark.min.css" as="style">
+<link rel="preload" href="../usr/themes/handsome/assets/css/limbopro.css" as="style">
+<link rel="preload" href="../usr/plugins/TableOfContents/css/toc_style.css" as="style">
+<link rel="preload" href="https://limbopro.com/usr/themes/handsome/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://limbopro.com/usr/themes/handsome/assets/fonts/fontello/fontello.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+
+
+<title>重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试） - 毒奶 - 欢迎使用代理访问本站。</title>
+<meta name="title" content="重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试） - 毒奶 - 欢迎使用代理访问本站。">
+<meta name="author" content="毒奶">
+<meta name="description" content="学会使用浏览器开发者工具与正则表达式，QuanmultX 便是一把去广告的瑞士军刀。">
+<meta name="image" content="https://limbopro.com/usr/uploads/2020/10/780363393.png">
+
+<meta itemprop="name" content="重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试） - 毒奶 - 欢迎使用代理访问本站。">
+<meta itemprop="author" content="毒奶">
+<meta itemprop="description" content="学会使用浏览器开发者工具与正则表达式，QuanmultX 便是一把去广告的瑞士军刀。">
+<meta itemprop="image" content="https://limbopro.com/usr/uploads/2020/10/780363393.png">
+
+<meta property="og:url" content="https://limbopro.com/archives/12782.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试） - 毒奶 - 欢迎使用代理访问本站。">
+<meta property="og:description" content="学会使用浏览器开发者工具与正则表达式，QuanmultX 便是一把去广告的瑞士军刀。">
+<meta property="og:image" content="https://limbopro.com/usr/uploads/2020/10/780363393.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@limboprossr">
+<meta name="twitter:creator" content="@limboprossr">
+<meta name="twitter:title" content="重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试） - 毒奶 - 欢迎使用代理访问本站。">
+<meta name="twitter:description" content="学会使用浏览器开发者工具与正则表达式，QuanmultX 便是一把去广告的瑞士军刀。">
+<meta property="twitter:image" content="https://limbopro.com/usr/uploads/2020/10/780363393.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta charset="UTF-8">
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+<meta name="renderer" content="webkit">
+
+<meta name="theme-color" content="#000000" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://www.doubleclickbygoogle.com/" />
+<link rel="dns-prefetch" href="https://www.google.com/" />
+<link rel="dns-prefetch" href="https://marketingplatform.google.com/" />
+<link rel="dns-prefetch" href="https://developers.google.com/" />
+<link rel="dns-prefetch" href="https://api.ip.sb/" />
+<link rel="dns-prefetch" href="https://adservice.google.com/" />
+<link rel="dns-prefetch" href="https://ajax.cloudflare.com/" />
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com/" />
+<link rel="dns-prefetch" href="https://www.google-analytics.com/" />
+<link rel="dns-prefetch" href="https://googleads.g.doubleclick.net/" />
+<link rel="dns-prefetch" href="https://twitter.com/" />
+<link rel="dns-prefetch" href="https://platform.twitter.com/" />
+<link rel="dns-prefetch" href="https://ssl.gstaic.com/" />
+
+
+
+<title>重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试） - 毒奶 - 欢迎使用代理访问本站。</title>
+<link rel="icon" type="image/ico" href="https://limbopro.com/favicon.ico">
+<link rel="stylesheet" type="text/css" href="../usr/plugins/TableOfContents/css/toc_style.css" />
+
+<script type="application/ld+json">
+    {
+    "@context" : "http://schema.org",
+    "@type" : "Article",
+    "headline" : "重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试） - 毒奶 - 欢迎使用代理访问本站。",
+        "description" : "学会使用浏览器开发者工具与正则表达式，QuanmultX 便是一把去广告的瑞士军刀。",
+        "keywords" : "广告拦截,QuantumultX,Quantumult X",
+    "author" : [{
+    "@type" : "Person",
+    "name" : "推特账号",
+    "url" : "https://twitter.com/limboprossr"
+    },{
+    "@type" : "Person",
+    "name" : "电报频道",
+    "url" : "https://t.me/limboprossr"
+    },{
+    "@type" : "Person",
+    "name" : "Instagram",
+    "url" : "https://www.instagram.com/limboprossr"
+    }],
+    "datePublished" : "2020-10-24",
+    "dateModified" : "2021-04-25",
+    "inLanguage":["zh"],
+        "image" : "https://limbopro.com/usr/uploads/2020/10/780363393.png",
+        "url" : "https://limbopro.com/archives/12782.html",
+    "publisher" : {
+    "@type" : "Organization",
+    "name" : "毒奶.inc Copyright"
+    }
+    }
+    </script>
+
+<style>
+    /*disqus Ads block with CSS*/
+    iframe[sandbox*="allow"]{display:none!important;}
+    </style>
+
+<script type="text/javascript">
+    
+        window['LocalConst'] = {
+            //base
+            BASE_SCRIPT_URL: 'https://limbopro.com/usr/themes/handsome/',
+            BLOG_URL: 'https://limbopro.com/',
+            BLOG_URL_N: 'https://limbopro.com',
+            STATIC_PATH: 'https://limbopro.com/usr/themes/handsome/assets/',
+            BLOG_URL_PHP: 'https://limbopro.com/',
+            VDITOR_CDN: 'https://cdn.jsdelivr.net/npm/vditor@3.4.5',
+            MATHJAX_SVG_CDN: 'https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-svg.js',
+            THEME_VERSION: '7.3.12020081501',
+            THEME_VERSION_PRO: '7.3.1',
+
+            //comment
+            COMMENT_NAME_INFO: '必须填写昵称或姓名',
+            COMMENT_EMAIL_INFO: '必须填写电子邮箱地址',
+            COMMENT_EMAIL_LEGAL_INFO: '邮箱地址不合法',
+            COMMENT_CONTENT_INFO: '必须填写评论内容',
+            COMMENT_SUBMIT_ERROR: '提交失败，请重试！',
+            COMMENT_CONTENT_LEGAL_INFO: '提交失败,评论被拦截或者进入审核区域',
+            COMMENT_CONTENT_CHECK_INFO: '评论进入审核区域，请勿重复评论',
+            COMMENT_TITLE: '评论通知',
+
+            //login
+            LOGIN_TITLE: '登录通知',
+            LOGIN_USERNAME_INFO: '必须填写用户名',
+            LOGIN_PASSWORD_INFO: '请填写密码',
+            LOGIN_SUBMIT_ERROR: '登录失败，请重新登录',
+            LOGIN_SUBMIT_INFO: '用户名或者密码错误，请重试',
+            LOGIN_SUBMIT_SUCCESS: '登录成功',
+            CLICK_TO_REFRESH: '点击以刷新页面',
+            LOGOUT_SUCCESS_REFRESH: '退出成功，正在刷新当前页面',
+
+            LOGOUT_ERROR: '退出失败，请重试',
+            LOGOUT_SUCCESS: '退出成功',
+            SUBMIT_PASSWORD_INFO: '密码错误，请重试',
+
+            //comment
+            ChANGYAN_APP_KEY: '',
+            CHANGYAN_CONF: '',
+
+            COMMENT_SYSTEM: '2',
+            COMMENT_SYSTEM_ROOT: '0',
+            COMMENT_SYSTEM_CHANGYAN: '1',
+            COMMENT_SYSTEM_OTHERS: '2',
+            EMOJI: '表情',
+            COMMENT_NEED_EMAIL: '0',
+            COMMENT_REJECT_PLACEHOLDER: '居然什么也不说，哼',
+            COMMENT_PLACEHOLDER: '说点什么吧……',
+
+            //pjax
+            IS_PJAX: '1',
+            IS_PAJX_COMMENT: '',
+            PJAX_ANIMATE: 'default',
+            PJAX_TO_TOP: '0',
+            TO_TOP_SPEED: '100',
+
+
+            USER_COMPLETED: {"data":""},
+
+            //ui
+            OPERATION_NOTICE: '操作通知',
+            SCREENSHOT_BEGIN: '正在生成当前页面截图……',
+            SCREENSHOT_NOTICE: '点击顶部下载按钮保存当前卡片',
+            SCREENSHORT_ERROR: '由于图片跨域原因导致截图失败',
+            SCREENSHORT_SUCCESS: '截图成功',
+
+            //music
+            MUSIC_NOTICE: '播放通知',
+            MUSIC_FAILE: '当前音乐地址无效，自动为您播放下一首',
+            MUSIC_FAILE_END: '当前音乐地址无效',
+            MUSIC_LIST_SUCCESS: '歌单歌曲加载成功',
+
+            //option
+            TOC_TITLE: '文章目录',
+            HEADER_FIX: '固定头部',
+            ASIDE_FIX: '固定导航',
+            ASIDE_FOLDED: '折叠导航',
+            ASIDE_DOCK: '置顶导航',
+            CONTAINER_BOX: '盒子模型',
+            DARK_MODE: '深色模式',
+            DARK_MODE_AUTO: '深色模式（自动）',
+            DARK_MODE_FIXED: '深色模式（固定）',
+            EDITOR_CHOICE: 'origin',
+
+
+            CDN_NAME: '',
+            LAZY_LOAD: '',
+            PAGE_ANIMATE: '',
+            THEME_COLOR: '14',
+            THEME_COLOR_EDIT: 'black-black-black',
+            THEME_HEADER_FIX: '1',
+            THEME_ASIDE_FIX: '1',
+            THEME_ASIDE_FOLDED: '',
+            THEME_ASIDE_DOCK: '',
+            THEME_CONTAINER_BOX: '1',
+            THEME_HIGHLIGHT_CODE: '1',
+            THEME_MATHJAX: '1',
+            THEME_TOC: '',
+            THEME_DARK_MODE: 'light',
+            THEME_DARK_MODE_VALUE: 'light',
+            SHOW_SETTING_BUTTON: '1',
+
+            THEME_DARK_HOUR: '18',
+            THEME_LIGHT_HOUR: '6',
+            THUMB_STYLE: '',
+            AUTO_READ_MODE: '',
+
+            //代码高亮
+            CODE_STYLE_LIGHT: 'dracula',
+            CODE_STYLE_DARK: 'dracula',
+
+            //other
+            OFF_SCROLL_HEIGHT: '50',
+            SHOW_IMAGE_ALT: '1',
+            USER_LOGIN: '',
+            USE_CACHE: '',
+            POST_SPEECH: '1',
+        };
+
+        if ('serviceWorker' in navigator) {
+            if (LocalConst.USE_CACHE) {
+                navigator.serviceWorker.register(LocalConst.BLOG_URL + 'sw.min.js?v=7.3.12020081501')
+                    .then(function (reg) {
+
+                    }).catch(function (error) {
+                    console.log('cache failed with ' + error); // registration failed
+                });
+            } else {
+                navigator.serviceWorker.getRegistrations()
+                    .then(function (registrations) {
+                        for (let registration of registrations) {
+                            registration.unregister();
+                            // 清除缓存
+                            window.caches && caches.keys && caches.keys().then(function (keys) {
+                                keys.forEach(function (key) {
+                                    caches.delete(key);
+                                });
+                            });
+                            console.log("unregister success")
+                        }
+                    });
+            }
+        }
+    </script>
+<script>
+            MathJax = {
+                tex:{
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    macros: {
+                        bf: '{\\boldsymbol f}',
+                        bu: '{\\boldsymbol u}',
+                        bv: '{\\boldsymbol v}',
+                        bw: '{\\boldsymbol w}'
+                    }
+                },
+                svg:{
+                    fontCache: 'global'
+                }
+            };
+        </script>
+
+<link href="../usr/themes/handsome/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../usr/themes/handsome/assets/css/origin/function.min.css" type="text/css" />
+<link rel="stylesheet" href="../usr/themes/handsome/assets/css/handsome.min.css" type="text/css" />
+
+<link rel="stylesheet" href="../usr/themes/handsome/assets/css/features/coolopacity.min.css" type="text/css" />
+<style>
+                .cool-transparent .app:before {
+                    background-color: rgba(0 , 0, 0, 1) !important;
+                    filter: blur(20px);
+                }
+            </style>
+
+<style type="text/css">
+        
+        html.bg {
+        background: rgba(0 , 0, 0, 1)
+        }
+        .cool-transparent .off-screen+* .app-content-body {
+        background: rgba(0 , 0, 0, 1)
+        }
+@media (max-width:767px){
+    html.bg {
+        background: rgba(0 , 0, 0, 1)
+        }
+        .cool-transparent .off-screen+* .app-content-body {
+        background: rgba(0 , 0, 0, 1)
+        }
+}
+#toc {
+    background: rgba(255, 255, 255, 0.3);
+}    .nav-tabs-alt .nav-tabs>li[data-index="2"].active~.navs-slider-bar {
+        transform: translateX(405%);
+    }
+    .nav-tabs-alt .nav-tabs>li[data-index="0"].active~.navs-slider-bar {
+        transform: translateX(100%);
+    }#aside .wrapper:hover {
+	background: url(../usr/themes/handsome/assets/img/snow.gif);
+	background-size: cover;
+	color: #999;
+}    </style>
+
+<script src="../usr/themes/handsome/assets/libs/jquery/jquery.min.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P2GKCC61G7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P2GKCC61G7');
+</script>
+
+
+
+
+<script async src="https://cse.google.com/cse.js?cx=c8ba9e10f156f7aff"></script>
+
+
+</head>
+<body id="body" class="fix-padding">
+
+
+
+<style>
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title *{background:white !important}
+input.gsc-input {color:black !important}
+</style> 
+<div id="alllayout" class="app app-aside-fix container app-header-fixed "> 
+<header id="header" class="app-header navbar box-shadow-bottom-lg" role="menu">
+
+<div class="text-ellipsis navbar-header bg-black">
+<button class="pull-right visible-xs" onclick="window.open('https://bit.ly/39oJwJE','_blank');">
+<span class="menu-icons"><i data-feather="search"></i></span>
+</button>
+<button class="pull-left visible-xs" ui-toggle-class="off-screen animated" target=".app-aside" ui-scroll="app">
+<span class="menu-icons"><i data-feather="menu"></i></span>
+</button>
+
+<a href="../index.html" class="navbar-brand text-lt">
+<span id="navbar-brand-day">
+<i class="fontello fontello-home"></i>
+<span class="hidden-folded m-l-xs">It's limboPro.com</span>
+</span>
+</a>
+
+</div>
+
+
+<div class="collapse pos-rlt navbar-collapse bg-black">
+
+
+
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown"><a target="blank" href="https://t.me/limboprobot" class="dropdown-toggle"><i class="fontello-chat-alt icon-fw"></i><span class="visible-xs-inline">相册</span></a></li> 
+<li class="dropdown">
+<a href="12782.html#" data-toggle="dropdown" class="feathericons dropdown-toggle">
+<i data-feather="twitch"></i>
+<span class="visible-xs-inline">
+闲言碎语 </span>
+<span class="badge badge-sm up bg-danger pull-right-xs"></span>
+</a>
+
+<div class="dropdown-menu w-xl animated fadeInUp">
+<div class="panel bg-white">
+<div class="panel-heading b-light bg-light">
+<strong>
+闲言碎语 </strong>
+</div>
+<div class="list-group" id="smallRecording">
+<a href="https://limbopro.com//cross.html" class="list-group-item"><span class="clear block m-b-none">这是一条默认的说说，如果你看到这条动态，请去后台新建独立页面，地址填写cross,自定义模板选择时光机。具体说明请参见主题的使用攻略。<br><small class="text-muted">March 10th, 2022 a 12:32 am</small></span></a> </div>
+</div>
+</div>
+</li>
+
+</ul>
+</div>
+
+</header>
+
+
+<aside id="aside" class="app-aside hidden-xs bg-black"> 
+<div class="aside-wrap" layout="column">
+<div class="navi-wrap scroll-y scroll-hide" flex>
+
+<div class="clearfix hidden-xs text-center hide  show" id="aside-user">
+<div class="dropdown wrapper ">
+<div ui-nav>
+<a href="https://t.me/s/limboprossr">
+<span class="thumb-lg w-auto-folded avatar m-t-sm  ">
+<img src="../usr/uploads/2019/09/2211209831.jpg" class="img-full img-circle normal-shadow">
+</span>
+</a>
+</div>
+<a href="12782.html#" data-toggle="dropdown" class="dropdown-toggle hidden-folded  ">
+<span class="clear">
+<span class="block m-t-sm">
+<strong class="font-bold text-lt">毒奶</strong>
+<b class="caret"></b>
+</span>
+<span class="text-muted text-xs block">
+网上冲浪爱好者<br>业余斜杆青年<br>建站与防御<br>NSFW</span>
+</span>
+</a>
+
+<ul class="dropdown-menu animated fadeInRight w hidden-folded no-padder">
+<li class="wrapper b-b m-b-sm bg-info m-n">
+<span class="arrow top hidden-folded arrow-info"></span>
+<div>
+<p>晚上好，注意早点休息</p>
+</div>
+<div class="progress progress-xs m-b-none dker">
+<div class="progress-bar bg-white" data-toggle="tooltip" data-original-title="时间已经度过0.00%" style="width: 0.00%"></div>
+</div>
+</li>
+</ul>
+
+</div>
+</div>
+
+
+<nav ui-nav class="navi clearfix">
+<ul class="nav">
+
+<div class="line dk hidden-folded"></div>
+<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+<span>导航</span>
+</li>
+
+<li>
+<a href="../index.html" class="auto">
+<span class="nav-icon"><i data-feather="home"></i></span>
+<span>首页</span>
+</a>
+</li>
+
+<li> <a target="_blank" href="../search.html" class="auto"><span class="nav-icon"><i class="glyphicon fontello-search"></i></span><span>毒奶搜索</span></a></li><li> <a target="_self" href="../category/tools/index.html" class="auto"><span class="nav-icon"><i class="glyphicon fontello-gear"></i></span><span>实用工具</span></a></li><li> <a target="_blank" href="../daohang/index.html" class="auto"><span class="nav-icon"><i class="glyphicon fontello-menu"></i></span><span>毒奶导航</span></a></li><li> <a target="_self" href="../allpages.html" class="auto"><span class="nav-icon"><i class="glyphicon glyphicon-book"></i></span><span>文章归档</span></a></li><li> <a target="_self" href="机场推荐.html" class="auto"><span class="nav-icon"><i class="glyphicon glyphicon-camera"></i></span><span>机场推荐</span></a></li><li> <a target="_self" href="subconverter.html" class="auto"><span class="nav-icon"><i class="glyphicon glyphicon-retweet"></i></span><span>订阅转换</span></a></li><li> <a target="_self" href="../6.html" class="auto"><span class="nav-icon"><i class="glyphicon glyphicon-volume-off"></i></span><span>联系我们</span></a></li><li> <a target="_self" href="../links.html" class="auto"><span class="nav-icon"><i class="glyphicon glyphicon-magnet"></i></span><span>友情链接</span></a></li> <li class="line dk"></li>
+
+<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+<span>组成</span>
+</li>
+
+<li>
+<a class="auto">
+<span class="pull-right text-muted">
+<i class="fontello icon-fw fontello-angle-right text"></i>
+<i class="fontello icon-fw fontello-angle-down text-active"></i>
+</span>
+
+<span class="nav-icon"><i data-feather="grid"></i></span> 
+<span>分类</span>
+</a>
+<ul class="nav nav-sub dk">
+<li class="nav-sub-header">
+<a>
+<span>分类</span>
+</a>
+</li>
+
+<li class="category-level-0 category-parent"><a href="../category/ssr/index.html"><b class="badge pull-right">31</b>科学上网</a></li><li class="category-level-0 category-parent"><a class="auto" href="../category/builder/index.html"><span class="pull-right text-muted">
+<i class="fontello icon-fw fontello-angle-right text"></i>
+<i class="fontello icon-fw fontello-angle-down text-active"></i>
+</span><span class="parent_name">建站优化</span></a><ul class="nav nav-sub dk child-nav"><li class="category-level-1 category-child category-level-odd"><a href="../category/LNMP/index.html"><b class="badge pull-right">36</b>建站指南</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/Typecho/index.html"><b class="badge pull-right">55</b>网站优化</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/Bulletin/index.html"><b class="badge pull-right">9</b>运营通报</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/website-protection/index.html"><b class="badge pull-right">9</b>网站防御</a></li></ul></li><li class="category-level-0 category-parent"><a class="auto" href="../category/shares/index.html"><span class="pull-right text-muted">
+<i class="fontello icon-fw fontello-angle-right text"></i>
+<i class="fontello icon-fw fontello-angle-down text-active"></i>
+</span><span class="parent_name">实用分享</span></a><ul class="nav nav-sub dk child-nav"><li class="category-level-1 category-child category-level-odd"><a class="auto" href="../category/tools/index.html"><span class="pull-right text-muted">
+<i class="fontello icon-fw fontello-angle-right text"></i>
+<i class="fontello icon-fw fontello-angle-down text-active"></i>
+</span><span class="parent_name">实用工具</span></a><ul class="nav nav-sub dk child-nav"><li class="category-level-2 category-child category-level-even"><a href="../category/downloader/index.html"><b class="badge pull-right">8</b>下载工具</a></li></ul></li><li class="category-level-1 category-child category-level-odd"><a href="../category/software-skills/index.html"><b class="badge pull-right">77</b>软件百科</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/Toilet-reading/index.html"><b class="badge pull-right">12</b>书单推荐</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/AfterFQ/index.html"><b class="badge pull-right">4</b>毒奶世界</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/master-care/index.html"><b class="badge pull-right">22</b>无主杂记</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/shell/index.html"><b class="badge pull-right">12</b>常用命令</a></li></ul></li><li class="category-level-0 category-parent"><a class="auto" href="../category/beautyandsex/index.html"><span class="pull-right text-muted">
+<i class="fontello icon-fw fontello-angle-right text"></i>
+<i class="fontello icon-fw fontello-angle-down text-active"></i>
+</span><span class="parent_name">开车美图</span></a><ul class="nav nav-sub dk child-nav"><li class="category-level-1 category-child category-level-odd"><a href="../category/NSFW/index.html"><b class="badge pull-right">24</b>开车专栏</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/instagram/index.html"><b class="badge pull-right">24</b>美图欣赏</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/technologyart/index.html"><b class="badge pull-right">2</b>科技美学</a></li></ul></li><li class="category-level-0 category-parent"><a class="auto" href="../category/movies/index.html"><span class="pull-right text-muted">
+<i class="fontello icon-fw fontello-angle-right text"></i>
+<i class="fontello icon-fw fontello-angle-down text-active"></i>
+</span><span class="parent_name">影视剧集</span></a><ul class="nav nav-sub dk child-nav"><li class="category-level-1 category-child category-level-odd"><a href="../category/hot-movies/index.html"><b class="badge pull-right">32</b>追剧小组</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/films-recommend/index.html"><b class="badge pull-right">44</b>电影推荐</a></li></ul></li><li class="category-level-0 category-parent"><a class="auto" href="../category/记录/index.html"><span class="pull-right text-muted">
+<i class="fontello icon-fw fontello-angle-right text"></i>
+<i class="fontello icon-fw fontello-angle-down text-active"></i>
+</span><span class="parent_name">历史记录</span></a><ul class="nav nav-sub dk child-nav"><li class="category-level-1 category-child category-level-odd"><a href="../category/telegram-anecdote/index.html"><b class="badge pull-right">13</b>电报奇闻</a></li><li class="category-level-1 category-child category-level-odd"><a href="../category/Internetlog/index.html"><b class="badge pull-right">8</b>联网观察</a></li></ul></li>
+
+</ul>
+</li>
+
+<li>
+<a class="auto">
+<span class="pull-right text-muted">
+<i class="fontello icon-fw fontello-angle-right text"></i>
+<i class="fontello icon-fw fontello-angle-down text-active"></i>
+</span>
+<span class="nav-icon"><i data-feather="file"></i></span>
+<span>页面</span>
+</a>
+<ul class="nav nav-sub dk">
+<li class="nav-sub-header">
+<a data-no-instant>
+<span>页面</span>
+</a>
+</li>
+
+<li><a href="../win-win.html"><span>商务合作</span></a></li>
+<li><a href="../allpages.html"><span>文章归档</span></a></li>
+<li><a href="../6.html"><span>联系我们</span></a></li>
+<li><a href="机场推荐.html"><span>SS机场/v2Ray机场/SSR机场推荐（2022年3月9日更新）</span></a></li>
+<li><a href="../links.html"><span>友情链接</span></a></li>
+</ul>
+</li>
+
+<li>
+<a class="auto">
+<span class="pull-right text-muted">
+<i class="fontello icon-fw fontello-angle-right text"></i>
+<i class="fontello icon-fw fontello-angle-down text-active"></i>
+</span>
+<span class="nav-icon"><i data-feather="user"></i></span>
+<span>友链</span>
+</a>
+<ul class="nav nav-sub dk">
+<li class="nav-sub-header">
+<a data-no-instant>
+<span>友链</span>
+</a>
+</li>
+
+<li data-original-title="有朋自远方来，不亦乐乎？" data-toggle="tooltip" data-placement="top"><a rel='noopener' href="https://zhuangzhuang.cf" target="_blank"><span>ZHUANGZHUANG</span></a></li><li data-original-title="handsome 主题作者。" data-toggle="tooltip" data-placement="top"><a rel='noopener' href="https://www.ihewro.com/" target="_blank"><span>友人C</span></a></li><li data-original-title="一个不负责任的教程博客。" data-toggle="tooltip" data-placement="top"><a rel='noopener' href="https://gtary.com/" target="_blank"><span>格塔里</span></a></li><li data-original-title="Lonely Hitun" data-toggle="tooltip" data-placement="top"><a rel='noopener' href="https://blog.ihitun.com" target="_blank"><span>小忆博客</span></a></li><li data-original-title="生活不易，还请多多指教！" data-toggle="tooltip" data-placement="top"><a rel='noopener' href="https://139931.xyz" target="_blank"><span>Charsky’s Blog</span></a></li> </ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+</div>
+</aside>
+
+<div id="content" class="app-content">
+
+<div id="loading" class="butterbar active hide">
+<span class="bar"></span>
+</div>
+
+<style>
+    #post-content{
+        font-size: 14px;
+    }
+</style>
+
+<a class="off-screen-toggle hide"></a>
+<main class="app-content-body ">
+<div class="hbox hbox-auto-xs hbox-auto-sm">
+
+<div class="col center-part">
+
+
+<header id="small_widgets" class="bg-light lter wrapper-md">
+<h1 class="entry-title m-n font-thin text-black l-h">重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试）<a class="plus-font-size" data-toggle="tooltip" data-original-title="点击改变文章字体大小"><i data-feather="type"></i></a><a class="speech-button m-l-sm superscript" data-toggle="tooltip" data-original-title="朗读文章"><i data-feather="play-circle"></i></a><a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="read_mode superscript m-l-sm" data-toggle="tooltip" data-placement="right" data-original-title="阅读模式"><i data-feather="book-open"></i></a></h1> 
+<ul class="entry-meta text-muted list-inline m-b-none small
+             post-head-icon">
+
+<li class="meta-author"><span class="post-icons"><i data-feather="user"></i></span><span class="sr-only">博主：</span> <a class="meta-value" href="../author/1/index.html" rel="author"> 毒奶</a></li>
+
+<li class="meta-date"><span class="post-icons"><i data-feather="clock"></i></span><span class="sr-only">发布时间：</span><time class="meta-value">2020 年 10 月 24 日</time></li>
+
+
+<li class="meta-word"><span class="post-icons"><i data-feather="pen-tool"></i></span><span class="meta-value">18459字数</span></li>
+
+<li class="meta-categories"><span class="post-icons"><i data-feather="hash"></i></span><span class="sr-only">分类：</span> <span class="meta-value"><a href="../category/tools/index.html">实用工具</a></span></li>
+
+<li class="meta-categories"><span class="post-icons"><i data-feather="twitter"></i></span><span class="sr-only">分类：</span> <span class="meta-blue"><a href="https://twitter.com/intent/tweet?text=发现一篇好文，分享给你🎉 &raquo; 重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试） https://limbopro.com/archives/12782.html&nbsp;作者&nbsp;@limboprossr&nbsp;广告拦截,QuantumultX,Quantumult X">点我发推</a></span></li>
+<a href="https://twitter.com/intent/tweet?text=发现一篇好文，分享给你🎉 &raquo; 重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试）" data-url="https://limbopro.com/archives/12782.html&nbsp;作者&nbsp;@limboprossr" class="twitter-mention-button" data-lang="zh-cn">分享本文</a>
+<a href="https://twitter.com/limboprossr?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-lang="zh-cn">Follow @limboprossr</a>
+<a href="https://twitter.com/intent/tweet?screen_name=limboprossr&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-related="limboprossr" data-lang="zh-cn" data-show-count="false">Tweet to @limboprossr</a>
+</ul>
+</header>
+<div class="wrapper-md" id="post-panel">
+<ol class="breadcrumb bg-white-pure" itemscope=""><li>
+<a href="../index.html" itemprop="breadcrumb" title="返回首页" data-toggle="tooltip"><span class="home-icons"><i data-feather="home"></i></span>首页</a>
+</li><li class="active">正文&nbsp;&nbsp;</li>
+<div style="float:right;">
+<style>
+
+   .breadcrumb i.iconfont.icon-qzone:after {
+    padding: 0 0 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+    }
+    
+   </style>
+</div></ol> 
+<div id="postpage" class="blog-post">
+<article class="single-post panel">
+
+
+<div id="post-content" class="wrapper-lg">
+<div class="entry-content l-h-2x" id="md_handsome_origin"><div class="tox-index"><div class="tox-title">本文目录 <span class="tox-toggle">[<a id="content-index-togglelink" href="../go/amF2YXNjcmlwdDpjb250ZW50X2luZGV4X3RvZ2dsZVRvYygp" target="_blank">隐藏</a>]</span></div><div id="toc-content"><ul><li class='toc-level2'><a href='12782.html#主理人序'>I. 主理人序</a></li><li class='toc-level2'><a href='12782.html#重写类型'>II. 重写类型</a></li><li class='toc-level2'><a href='12782.html#会使用到的工具'>III. 会使用到的工具</a></li><li class='toc-level2'><a href='12782.html#成功示例'>IV. 成功示例</a></li><li class='toc-level2'><a href='12782.html#一份完整有效的_conf_内容示例'>V. 一份完整有效的 conf 内容示例</a></li><li class='toc-level2'><a href='12782.html#QuantumultX-分流'>VI. QuantumultX-分流</a></li><li class='toc-level2'><a href='12782.html#QuantumultX-重写'>VII. QuantumultX-重写</a></li><li class='toc-level2'><a href='12782.html#开发者工具应用示例'>VIII. 开发者工具应用示例</a></li><li class='toc-level2'><a href='12782.html#去网页广告的2种基本思路'>IX. 去网页广告的2种基本思路</a></li><li class='toc-level2'><a href='12782.html#分流/重写在去广告上的应用场景'>X. 分流/重写在去广告上的应用场景</a></li><li class='toc-level2'><a href='12782.html#找到广告'>XI. 找到广告</a></li><li class='toc-level2'><a href='12782.html#去除广告'>XII. 去除广告</a></li><li class='toc-level2'><a href='12782.html#正则表达式的运用'>XIII. 正则表达式的运用</a></li><li class='toc-level2'><a href='12782.html#验证表达式有效'>XIV. 验证表达式有效</a></li><li class='toc-level2'><a href='12782.html#通过嵌入JavaScript文件去网页广告的方法'>XV. 通过嵌入JavaScript文件去网页广告的方法</a></li><li class='toc-level2'><a href='12782.html#通过嵌入CSS文件去网页广告的方法'>XVI. 通过嵌入CSS文件去网页广告的方法</a></li><li class='toc-level2'><a href='12782.html#附注'>XVII. 附注</a></li></ul></li></ul></div></div>
+
+<hr><p><img src="../usr/uploads/2020/10/684532821.jpg" alt="photo_2020-08-21_01-58-39.jpg" /></p>
+<p>via 春潮频道；</p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="15067.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2021/03/2749742181.png);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">前端三剑客入门教程 - HTML/CSS/JavaScript</p>
+<div class="inster-summary text-muted">
+主理人序知其然，知其所以然；我们每天所接触的，如浏览器，URL，早已习以为常，但似乎从未真正的了解它们；前端是什么...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="14973.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2021/03/3575210713.png);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">去网页广告 - 引入新的CSS文件实现去网页广告教程（for QuantumultX）</p>
+<div class="inster-summary text-muted">
+via CSS简介 WEB前端三剑客之二；Web 技术参考HTML是一种标记语言，用来结构化我们的网页内容并赋予内...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="14044.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2021/01/3847766637.png);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">重写类型 302/307/reject 的用法丨利用 Quantumult X 替换URL链接实现请求重定向（正则表达式）</p>
+<div class="inster-summary text-muted">
+主理人说工欲善其事，必先利其器。先思考，在进行运用，多运用。不消一刻钟，你便已经入门到精通。重写类型打开 Quan...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="adguard.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2019/11/4035067133.jpg);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">Adguard- 女朋友也喜欢用的广告拦截程序（屏蔽广告、跟踪器以及安装油猴脚本）</p>
+<div class="inster-summary text-muted">
+本文隶属于 软件百科 分类，点击分类名称可以查看更多相关文章；主理人推荐序 直接装Adguard的浏览器扩展（免费...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="safari-content-blocker.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2020/03/2088172066.png);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">iOS Safari 内容拦截器 - 全方位去网页广告（免费，开源，社区维护）</p>
+<div class="inster-summary text-muted">
+*PC/Mac平台 浏览器（Chrome/Safari/Firefox等）去广告可参考上述文章； Quantum...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<h2 id="主理人序">I. 主理人序</h2>
+<p>自己动手的快乐，只有自己知道，另外欢迎加入毒奶去广告计划。（里面有丰富的实践示例）</p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="12904.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2020/11/3738758189.jpg);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">即刻加入毒奶去广告计划（Quantumult X for iOS）</p>
+<div class="inster-summary text-muted">
+via Twitter；前序 使用平台： iOS使用软件： Quantumult X涉及模块： Rewrite/M...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<h2 id="重写类型">II. 重写类型</h2>
+<p>打开 Quantumultx - 点击<strong>右下角三菱按钮</strong> - 划至<code>重写</code>模块 - 点击<code>添加</code>按钮 - OK，你会看到很多有意思的重写类型 ，每一个都值得学习；本文将就 <code>response-body</code>的用法进行着重介绍；</p>
+<h2 id="会使用到的工具">III. 会使用到的工具</h2>
+<p>1.QuantumultX - [Rewrite]/[Filter]；<br />
+2.<a href="../go/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9MZWFybi9EaXNjb3Zlcl9icm93c2VyX2RldmVsb3Blcl90b29scw==" target="_blank">Chrome 开发者工具</a>；<br />
+3.<a href="../go/aHR0cHM6Ly9kZWVyY2hhby5jbi90dXRvcmlhbHMvcmVnZXgvcmVnZXguaHRt" target="_blank">正则表达式30分钟入门指南</a>；<br />
+4.<a href="../go/aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3JlZ2V4Lw==" target="_blank">正则表达式在线测试工具</a>；<br />
+5.<a href="../go/aHR0cHM6Ly9hZGd1YXJkLmNvbS96aF9jbi9ibG9nL2FkZ3VhcmQtZmlsdGVycy5odG1s" target="_blank">Adguard 中文过滤器</a> 涵盖绝大多数中文网站（志愿者数多）广告过滤规则；<br />
+6.QuantumultX - 调试 - 网络活动；</p>
+<p><strong>通读本文你将会得到三个好东西</strong><br />
+1.更加熟练的使用 QuantumultX；<br />
+2.谷歌浏览器开发者工具；<br />
+3.熟练的使用正则表达式（在这里只需入门即可）；<br />
+4.对HTML网页结构更加熟悉；（深入学习可参阅 <a href="../go/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSFRNTA==" target="_blank">HTML（超文本标记语言）</a>）；<br />
+5.使用正则匹配HTML相关元素如<code>&lt;div&gt;\&lt;img&gt;</code>，并进行替换以达到去广告的目的；</p>
+<h2 id="成功示例">IV. 成功示例</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-da3c2763dbe9777b09e10be6cf01c17f27" aria-expanded="true"><div class="accordion-toggle"><span>近期成功去广告示例-供参考</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-da3c2763dbe9777b09e10be6cf01c17f27" class="panel-body collapse in">
+</p>
+<p><strong>Quantumult X 用户去视频网站广告</strong> </p>
+<p>1.分流 引用 <a href="../Adblock4limbo.list" target="_blank">https://limbopro.com/Adblock4limbo.list</a> 可以点开看看里面内容<br />
+2.重写 引用 <a href="../Adblock4limbo.conf" target="_blank">https://limbopro.com/Adblock4limbo.conf</a> 可以点开看看里面内容<br />
+3.然后配置好证书（如已配置可忽略）</p>
+<p><strong>可去除以下6个视频网站广告（内页广告以及播放前广告跳过）</strong></p>
+<p><a href="../go/aHR0cHM6Ly9qYWJsZS50di8=" target="_blank">https://jable.tv/</a> NSFW<br />
+<a href="../go/aHR0cHM6Ly9uZXRmbGF2LmNvbS8=" target="_blank">https://netflav.com/</a> NSFW<br />
+<a href="../go/aHR0cHM6Ly9kZHJrLm1lLw==" target="_blank">https://ddrk.me/</a> 低端影视(完美<br />
+<a href="../go/aHR0cHM6Ly93d3cubmZtb3ZpZXMuY29tLw==" target="_blank">https://www.nfmovies.com/</a> 奈菲影视（完美<br />
+<a href="../go/aHR0cHM6Ly93d3cuZGlsaWxpdHYuY29tLw==" target="_blank">https://www.dililitv.com/</a> 嘀哩哩 （完美<br />
+<a href="../go/aHR0cHM6Ly9tLnBpYW5rdS5tZS8=" target="_blank">https://m.pianku.me/</a> 片库网（完美</p>
+<p><a href="https://www.google.com/search?q=%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&amp;oq=%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F" target="_blank">正则表达式</a>还在学习中，DIY去网页广告教程晚点会出。如有疑问可联系 <a href="https://t.me/limboprobot" target="_blank">@limboprobot</a></p>
+<p>部分规则有参考Adguard <a href="../go/aHR0cHM6Ly9hZGd1YXJkLmNvbS96aF9jbi9ibG9nL2FkZ3VhcmQtZmlsdGVycy5odG1s" target="_blank">中文过滤器</a> 书写 (这才是最强去广告集合</p>
+<p>后续更新：<a href="https://github.com/limbopro/Adblock4limbo" target="_blank">https://github.com/limbopro/Adblock4limbo</a><br />
+讨论群组：<a href="https://t.me/Adblock4limbo" target="_blank" target="_blank">https://t.me/Adblock4limbo</a></p>
+<p>
+</div></div></p>
+<h2 id="一份完整有效的_conf_内容示例">V. 一份完整有效的 conf 内容示例</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-0dfe0527821e4d14357e2b78d2b9a4f38" aria-expanded="true"><div class="accordion-toggle"><span>完整示例</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-0dfe0527821e4d14357e2b78d2b9a4f38" class="panel-body collapse in">
+</p>
+<pre><code>hostname = *.pianku.me
+#www.pianku.me adsblock
+^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body var pycount=10 response-body var pycount=0</code></pre>
+<p><strong>完整且合法的 conf 配置包含两个部分：</strong><br />
+1.<code>hostname</code>：主机名，<em>.pianku.me，其中</em>星号可代表任意字符、字符串：可以匹配到 m.pianku.me，x.pianku.me 等等；<br />
+2.<code>^https:?/\/\b..+pianku.\w{2,3}\b.*</code> 是正则表达式，用来匹配具体请求<code>URL</code>的，这条正则可以匹配到 <code>https://m.pianku.me/py/lJmM2kDN4cza_1.html?158064</code>（视频播放页面）；<code>var pycount=10</code> 匹配 HTTP 响应体中的内容，需要被替换的内容；<code>var pycount=0</code> 为替换内容；<code>^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body var pycount=10 response-body var pycount=0</code> 即将网页元素中 <code>var pycount=10</code> 替换为 <code>var pycount=0</code>；</p>
+<p><strong>即你可以将之理解为</strong>，先要有主机名（如 pianku.me ），没有的话 Quantumult X 就就没办法进行下一步匹配了；有了主机名之后，就要对具体的URL请求进行相对应的操作，这条URL符合哪些条件呢？就涉及到正则表达式（如 ^https:?/\/\b..+pianku.\w{2,3}\b.* ，用正则表达式的好处在于可以更精细的匹配想要去广告的URL；）；response-body 后的参数 也可以是 <strong>正则表达式</strong>（是的！虽然 var pycount=0 这一条很普通，但这也是一条表达式！）；</p>
+<p>视频广告倒计时，由10秒减少至0秒；</p>
+<p>
+</div></div></p>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-0f70b124fc7a694f95db6c09d7d8681133" aria-expanded="true"><div class="accordion-toggle"><span>Quantumult X 的两个模块</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-0f70b124fc7a694f95db6c09d7d8681133" class="panel-body collapse in">
+</p>
+<h2 id="QuantumultX-分流">VI. QuantumultX-分流</h2>
+<details>
+<summary>展开查看-分流</summary>
+<p><img src="../usr/uploads/2020/10/2917676429.jpg" alt="QuantumultX-分流-重写-去广告" /></p>
+</details>
+<p>以下这是一条去广告分流规则，即所有带<code>baidu.com</code>结尾的域名请求均会被拒绝，意味着你不能打开百度；可<strong>分解成3个部分</strong>，<code>类型</code>, <code>参数</code>, <code>策略</code>：</p>
+<pre><code>DOMAIN-SUFFIX, baidu.com, REJECT</code></pre>
+<p><strong>类型这里有很多种，</strong></p>
+<pre><code>HOST
+HOST-SUFFIX
+HOST-KEYWORD
+USER-AGENT
+IP-CIDR
+IP6-CIDR
+GEOIP</code></pre>
+<p><strong>策略默认有3种</strong>，其余的大家可以自行<a href="3846.html#%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B" target="_blank">建立策略组</a>；</p>
+<pre><code>PROXY（该策略对应为 QuantumultX 主页 - 左边第一个图标，该策略下方有你所有的节点分组）
+DIRECT
+REJECT</code></pre>
+<details>
+<summary>展开查看-PROXY策略</summary>
+<p><img src="../usr/uploads/2020/10/1472518177.jpg" alt="PROXY" /></p>
+</details>
+<p><strong>分流应用举例</strong></p>
+<pre><code>DOMAIN-SUFFIX, baidu.com, REJECT #拒绝域名后缀为baidu.com 的一切请求
+DOMAIN-SUFFIX, baidu.com, DIRECT #域名后缀为baidu.com 的一切请求均走 直连
+DOMAIN-SUFFIX, baidu.com, PROXY  #域名后缀为baidu.com 的一切请求均走 PROXY</code></pre>
+<p>OK，<strong>分流</strong>先到这里，更多示例可参考 NobyDa 的去广告<a href="https://github.com/NobyDa/Script/blob/master/QuantumultX/AdRule.list" target="_blank">分流规则</a>；<br />
+操作：打开 <code>Quantumult X</code> - <code>分流</code> - <code>添加</code></p>
+<h2 id="QuantumultX-重写">VII. QuantumultX-重写</h2>
+<p>我们先看一条示例，去YouTube App 视频开头广告，其中涉及两个要素，一个是<strong>hostname</strong>、其次是相应的<code>正则表达式</code>,<code>类型</code>,<code>参数</code>（我暂且称之为参数）；</p>
+<pre><code>hostname = *.googlevideo.com
+
+(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&amp;.+) url 302 $1$3
+^https?:\/\/[\w-]+\.googlevideo\.com\/.+&amp;(oad|ctier) url reject
+</code></pre>
+<p>OK，现在打开 <code>Quantumult X</code>，- <code>重写</code> - <code>添加</code>，有多达17个<code>类型</code>可选；</p>
+<details>
+<summary>展开查看-重写类型</summary>
+<p><img src="../usr/uploads/2020/10/2413144868.jpg" alt="Quantumult X - 重写 -类型.jpg" /></p>
+</details>
+<p>我们接下来会用到的重写<code>类型</code></p>
+<pre><code>url reject
+url 302
+url response-body</code></pre>
+<p>
+</div></div></p>
+<h2 id="开发者工具应用示例">VIII. 开发者工具应用示例</h2>
+<p>以手机片库网举例：</p>
+<pre><code>#####www.pianku.me 手机片库网去视频片头广告（倒计时10s改为0秒）
+hostname = *.pianku.me
+^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body pycount=10 response-body pycount=0</code></pre>
+<p>所有匹配<code>^https:?/\/\b..+pianku.\w{2,3}\b.*</code> 的请求（Request），如其 <code>response-body</code>（响应体）中包含<code>var pycount=10</code>的话，则将其替换为<code>var pycount=0</code>；</p>
+<p>我们要知道的是，一个网页打开时会发起无数请求，我们不妨使用 Chrome的<a href="https://developers.google.com/web/tools/chrome-devtools?hl=zh-cn" target="_blank" target="_blank" target="_blank">开发者工具</a> 查看下；</p>
+<p><img src="../usr/uploads/2020/10/3026605580.png" alt="手机片库网.png" /></p>
+<p>打开<code>m.pianku.me</code> 时多达 97个请求，每个请求对应一个<strong>URL</strong>（包含外部资源引用），基本上到这里你应该知道如何应对广告加载了；</p>
+<p><img src="../usr/uploads/2020/10/2176475754.png" alt="谷歌开发者工具.png" /></p>
+<p>随意打开某部电影，如 <code>https://m.pianku.me/py/lNWZl1WYxg2M_1.html?160311</code>，<br />
+我们就很容易找到片头广告对应在<code>Reponse</code>（响应体）的位置，将倒计时参数 <code>pycount=10</code> 改为 <code>pycount=0</code>即可；</p>
+<p>而在 Quantumult X 中 - <code>重写</code> - <code>类型</code>则是 <code>response-body</code>，对应的范例：</p>
+<pre><code>hostname = *.pianku.me
+^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body pycount=10 response-body pycount=0</code></pre>
+<h2 id="去网页广告的2种基本思路">IX. 去网页广告的2种基本思路</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-7030cf3d424b90e32a8b82a291772cb666" aria-expanded="true"><div class="accordion-toggle"><span>基本思路</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-7030cf3d424b90e32a8b82a291772cb666" class="panel-body collapse in">
+</p>
+<h3>禁止加载广告资源</h3>
+<p><strong>禁止加载广告资源</strong>；（使用分流规则的<code>Reject</code>对广告域进行<code>Request</code>禁止；使用重写<code>类型</code>如<code>reject</code>/<code>reject</code>/<code>reject-200</code>.../对匹配的广告域进行<code>Request</code>禁止；）；</p>
+<h3>重写网页资源</h3>
+<p><div class="tip inlineBlock success">本文文末为大家提供了两种重写网页资源的超便捷方法，通过嵌入<strong>JavaScript文件/CSS文件</strong>实现对网页资源的控制；</div>
+<p><strong>重写网页资源</strong>；重写在QuantumultX 对应 <code>Rewrite</code>、 <code>Reponse</code>响应（与之对应的是<code>Request</code>，即请求）内容，在Quantumult X 中<strong>响应</strong>又分为<code>response-body</code>/<code>script-response-body</code>/<code>script-response-header</code>...等等，每个类型都有其妙用；（本文所讨论的正式 <code>response-body</code>，改写HTTP响应体 ）</p>
+<p>我们应该知道的是<strong>每个网站网页都有其结构</strong>，网页内各个项目的长宽比例都是统一的，网页自顶部开始，标题，播放框，等等；</p>
+<p>广告会加载在哪个地方呢？是悬浮的还是固定长宽比例的，是引用的站内资源还是站外资源，这是在去广告过程中应该考量的；</p>
+<p>如果广告是动图？那么你应该找到这个动图对应的URL，分析该URL特点，使用分流或重写对其<code>Requeset</code>禁止，这样网页内就不会再出现该<code>Gif</code>了；</p>
+<p>
+</div></div></p>
+<h2 id="分流/重写在去广告上的应用场景">X. 分流/重写在去广告上的应用场景</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-17b0a3b73765f02352e0dfc0a04d220f0" aria-expanded="true"><div class="accordion-toggle"><span>应用场景</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-17b0a3b73765f02352e0dfc0a04d220f0" class="panel-body collapse in">
+</p>
+<p>使用分流（Filter）去广告，一去去全家；<br />
+使用重写（Rewrite）去广告，想<strong>去除</strong>哪里<strong>去除</strong>哪里；</p>
+<p><strong>分流去广告示例：</strong></p>
+<pre><code>##m.pianku.me/ 手机片库网
+DOMAIN-SUFFIX, xn--2qux23c9ziyrq.club, reject #整个域名下所有URL均禁止</code></pre>
+<p><strong>重写示例去广告</strong></p>
+<pre><code>##m.pianku.me/ 手机片库网
+hostname = xn--2qux23c9ziyrq.club
+xn--2qux23c9ziyrq.club.*?js url reject #禁止该域名下js加载</code></pre>
+<p>
+</div></div></p>
+<h2 id="找到广告">XI. 找到广告</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-271902c9fcbc3c0581f99364103caeeb57" aria-expanded="true"><div class="accordion-toggle"><span>找广告</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-271902c9fcbc3c0581f99364103caeeb57" class="panel-body collapse in">
+</p>
+<h3>开发者工具找广告</h3>
+<p>依然拿 <code>https://m.pianku.me/py/lNWZl1WYxg2M_1.html?160311</code>举例，这个动图广告，依然可以利用Chrome <a href="https://developers.google.com/web/tools/chrome-devtools?hl=zh-cn" target="_blank" target="_blank" target="_blank">开发者工具</a> 找出来（开发者工具又称为网页调试工具）：</p>
+<p><img src="../usr/uploads/2020/10/582632344.png" alt="开发者工具-Elements.png" /></p>
+<p><code>https://jpg.meitaixianlan.com/jpg/EoNhlD.gif</code></p>
+<h3>Adgurd 过滤日志找广告</h3>
+<p><strong>在本文一开始前，我们有说过 Adguard 中文过滤器是很强大的存在；</strong></p>
+<p>如下图，打开 <strong>Adguard - 浏览器扩展 - 打开过滤日志</strong> - 你可以看到很多很有趣的东西；<br />
+哪些<code>Request</code>（请求）被过滤掉了，哪些图片是广告图片，涉及的正则表达式（Adguard 式）是什么；</p>
+<p>为什么它可以这么强？因为 Adguard 有为数众多的志愿者，或者工作人员；</p>
+<p>其中涉及的 <strong><a href="../go/aHR0cHM6Ly9hZGd1YXJkLmNvbS96aF9jbi9ibG9nL2FkZ3VhcmQtZmlsdGVycy5odG1s" target="_blank">EasyList China</a></strong> ，包含绝大多数<strong>中文网络世界世界广告屏蔽规则</strong> ，<a href="../go/aHR0cHM6Ly9hZGJsb2NrcGx1cy5vcmcv" target="_blank">Adblock Plus</a> 在用，<a href="adguard.html" target="_blank">Adguard</a> 在用，<a href="1098.html" target="_blank">uBlock Origin</a> 等等一系列的浏览器去广告扩展都在用并在此基础上加强；</p>
+<p><img src="../usr/uploads/2020/10/2157822485.png" alt="片库网-adguard-中文过滤器.png" /><br />
+<img src="../usr/uploads/2020/10/1563585511.png" alt="片库网-adguard-中文过滤器-2.png" /></p>
+<p>找网站上的广告，博主十分建议通过 Adguard 的浏览器扩展，九牛二虎之力；</p>
+<h3>Quantumult X - 调试</h3>
+<p><img src="../usr/uploads/2020/10/1300354628.png" alt="Quantumult X 调试.png" /></p>
+<p>RT，开启<strong>调试</strong>后将会<strong>记录所有（完整）</strong>从按钮开启后的<strong>网络活动</strong>；<br />
+划重点，所有（完整）的 http/https <strong>请求</strong>与<strong>响应</strong>；</p>
+<p>
+</div></div></p>
+<h2 id="去除广告">XII. 去除广告</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-e35cc4cd74540a3a7afb0f59b1611f8a72" aria-expanded="true"><div class="accordion-toggle"><span>去广告</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-e35cc4cd74540a3a7afb0f59b1611f8a72" class="panel-body collapse in">
+</p>
+<h3>举个例子</h3>
+<p>[collapse status="true" title="重写举例"]</p>
+<p><strong>禁止加载某张图片：以奈菲影视悬浮广告举例</strong> <a href="https://www.nfmovies.com/static/202010-2.jpg" target="_blank" target="_blank">https://www.nfmovies.com/static/202010-2.jpg</a> </p>
+<pre><code>hostname = www.nfmovies.com, hahah.com
+^https:?/\/.*?nfmovies.*?/static/202010-2.jpg url reject
+https://www.nfmovies.com/static/202010-2.jpg  url reject </code></pre>
+<p><img src="../usr/uploads/2020/10/3870097289.png" alt="重写举例-正则表达式应用" /></p>
+<p>以上两个写法都是可行的，符合正则；<br />
+<a href="../go/aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3JlZ2V4Lw==" target="_blank">在线正则表达式测试工具</a>；</p>
+<p><strong>替换某张图片：以奈菲影视悬浮广告举例</strong> <a href="https://www.nfmovies.com/static/202010-2.jpg" target="_blank" target="_blank">https://www.nfmovies.com/static/202010-2.jpg</a> </p>
+<pre><code>hostname = www.nfmovies.com, hahah.com
+^https:?/\/.*?nfmovies.*?/static/202010-2.jpg url 302 https://limbopro.com/usr/uploads/2020/10/2091577197.png</code></pre>
+<p>禁止加载 .js/.gif/.png/.php 同理，使用正则表达式匹配到相应的请求URL即可；</p>
+<p>另，表达式有无数种写法，匹配结果的精确程度各不相同；<br />
+懒惰匹配即可；</p>
+<p>参考：<a href="../go/aHR0cHM6Ly93d3cudzNjc2Nob29sLmNuL3JlZ2V4X3JtamMvcmVnZXhfcm1qYy1uNWEzMjhjbi5odG1s" target="_blank">正则表达式</a>；<br />
+参考：<a href="../go/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSFRUUC9TdGF0dXM=" target="_blank">HTTP 响应代码</a><br />
+<a href="../go/aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3JlZ2V4Lw==" target="_blank">在线正则表达式测试工具</a>；</p>
+<p>
+</div></div></p>
+<h3>分流与重写</h3>
+<p><strong>接上，找到广告了，怎么处理呢？</strong></p>
+<p>简单粗暴一点，直接使用分流进行<code>Reject</code>；</p>
+<pre><code>DOMAIN-SUFFIX, meitaixianlan.com, reject</code></pre>
+<p>OK，无痕模式再次打开 <code>https://m.pianku.me/py/lNWZl1WYxg2M_1.html?160311</code>，<br />
+发现广告还在？且还是会随着每次刷新进行变换的（随机性）。</p>
+<p>排查：进入 QuantumultX - 网络活动 - 点击中间的禁止符号：</p>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-e44be7dffead835b6e089f585c4a164563" aria-expanded="true"><div class="accordion-toggle"><span>展开查看-网络活动-禁止</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-e44be7dffead835b6e089f585c4a164563" class="panel-body collapse in">
+<br />
+<img src="../usr/uploads/2020/10/1805199936.png" alt="Fliter-禁止.png" /><br />
+<img src="../usr/uploads/2020/10/1233054568.jpg" alt="生效.jpg" /></p>
+<p>我们分流规则是生效的，但网页似乎还随机安排了另外一个广告（意思是原来的动图正下方还有另外一个动图甚至更多）；<br />
+仔细查看 <a href="https://developers.google.com/web/tools/chrome-devtools?hl=zh-cn" target="_blank" target="_blank" target="_blank">开发者工具</a> Elements 下内容，确实还有另外一个.gif，甚至更多（后来我们找到了，确实叠加了很多层，XSWL）；</p>
+<p>
+</div></div></p>
+<p>你要知道，网页上所有资源无论视频或图片以及该死的动图，都不可能无中生有，不发起<code>Request</code>（请求）就不可能会有<code>Response</code>（响应），然后我们继续排查；</p>
+<p>全局搜索，回到开发者工具，-<code>Network</code>，全局搜索 <code>meitaixianlan.com</code>，</p>
+<p><img src="../usr/uploads/2020/10/334976202.png" alt="Network-搜索.png" /></p>
+<p><img src="../usr/uploads/2020/10/3824063467.png" alt="Request-URL.png" /></p>
+<p>Request URL: <code>https://xn--2qux23c9ziyrq.club:4443/ty/x-3111-33.js</code></p>
+<p>得，就是你了；</p>
+<pre><code>######m.pianku.me/ 手机片库网
+DOMAIN-SUFFIX, xn--2qux23c9ziyrq.club, reject</code></pre>
+<p>自此，手机片库网去广告结束；</p>
+<p>参阅 <a href="../go/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSFRUUC9TdGF0dXM=" target="_blank">HTTP 响应代码</a>；</p>
+<p>[/collapse]</p>
+<h2 id="正则表达式的运用">XIII. 正则表达式的运用</h2>
+<p>以手机片库网去片头广告为例，如下：</p>
+<pre><code>#####www.pianku.me 手机片库网去视频片头广告（倒计时10s改为0秒）
+hostname = *.pianku.me
+^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body pycount=10 response-body pycount=0</code></pre>
+<p>其中表达式 <code>^https:?/\/\b..+pianku.\w{2,3}\b.*</code> 意为匹配 <strong>片库网</strong> 的相关链接请求，如 <code>https://m.pianku.me/tv/wNiNWarFDM.html</code>；</p>
+<p>打开 <a href="../go/aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3JlZ2V4Lw==" target="_blank">在线表达式测试</a> 测试：</p>
+<p><img src="../usr/uploads/2020/10/537363575.png" alt="在线表达式测试结果" /></p>
+<p><strong>匹配与替换</strong>：<code>pycount=10</code> 是用来匹配 <code>response-body</code>的，匹配到后则替换为 <code>pycount=0</code> ；</p>
+<p><code>response-body</code> 在这里是 <code>https://m.pianku.me/tv/wNiNWarFDM.html</code> 的响应体：响应体也就是<strong>网页的正文内容</strong>，一般在响应头中会用 Content-Length 来明确响应体的长度，便于浏览器接收，对于大数据量的正文信息，也会使用 chunked 的编码方式。</p>
+<p><a href="../go/aHR0cHM6Ly9tLnBpYW5rdS5tZS9weS9sTldaMUFUYjNvR01fMS5odG1sPzE2MDE2MQ==" target="_blank">https://m.pianku.me/py/lNWZ1ATb3oGM_1.html?160161</a> （异星灾变第一集播放页面） 的 <code>response-body</code>；</p>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-66ce1015aa2fb74b1ff91f6945e73bc614" aria-expanded="true"><div class="accordion-toggle"><span>展开查看-response-body</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-66ce1015aa2fb74b1ff91f6945e73bc614" class="panel-body collapse">
+</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-cn"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width,user-scalable=no"&gt;
+&lt;meta name="robots" content="none"&gt;
+&lt;title&gt;异星灾变_第01集在线播放-片库&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5a21a69d1b034aed24dcda25771e8135";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+&lt;link type="text/css" rel="stylesheet" href="/static/css/style2.css?0g2s4"/&gt;
+&lt;link type="text/css" rel="stylesheet" href="/static/css/icon.css?gdf"/&gt;
+&lt;link type="text/css" rel="stylesheet" href="/static/css/xtiper.css"/&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<a href="../cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="92f8e3e7f7e0ebd2a1bca7bca3">[email&#160;protected]</a>/dist/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<a href="../cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c9aabbb0b9bda6e4a3ba89fde7f9e7f9">[email&#160;protected]</a>/crypto-js.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<a href="../cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fd9b8893919c8784bdcfd3ccd3ce">[email&#160;protected]</a>/dist/funlazy.min.js"&gt;&lt;/script&gt;
+&lt;script src="/static/js/function.js?fchh0"&gt;&lt;/script&gt;
+&lt;script src="/static/js/xtiper.min.js"&gt;&lt;/script&gt;
+&lt;script src="/static/js/TouchSlide.js?g11h"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<a href="../cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3546425c45504775031b071b05">[email&#160;protected]</a>/swiper-bundle.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+&lt;div class="nav_top"&gt;
+&lt;div class="nav_menu"&gt;
+&lt;div class="logo"&gt;&lt;a href="/"&gt;&lt;img src="/logo.svg" alt="片库网"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="right menu_right"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span onclick="NightMode()" id="dark"&gt;&lt;i class="icon-moon"&gt;&lt;/i&gt;&lt;/span&gt;&lt;script type="text/javascript"&gt;if (mdark == "1"){$("#dark").html("&lt;i class=\"icon-sunny\"&gt;&lt;/i&gt;");}&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id="so-zk"&gt;&lt;i class="icon-search"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id="his-zk"&gt;&lt;i class="icon-time"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;!--&lt;li&gt;&lt;span&gt;&lt;i class="icon-user"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;--&gt;
+&lt;/ul&gt;
+
+&lt;div id="his"&gt;&lt;div class="his-a"&gt;&lt;div class="right" id="his-sq"&gt;关闭&lt;/div&gt;播放历史&lt;a title="清空观看记录" href="javascript:_GC();" class="his-gc"&gt;清空&lt;/a&gt;&lt;/div&gt;&lt;ul id="historys"&gt;&lt;div style="text-align:center;"&gt;您的观看历史为空&lt;/div&gt;&lt;/ul&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="search" id="search"&gt;&lt;form name="formsearch" id="formsearch" action="/s/go.php?" method="get" target="_self" autocomplete="off"&gt;&lt;input class="input zanpian_wd" name="q" type="text" id="keyword" placeholder="输入关键词" value=""&gt;&lt;div class="clear"&gt;&lt;/div&gt;&lt;input class="imgbt" type="submit" value="搜索"&gt;&lt;/form&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;nav id="mNav"&gt;&lt;ul class="swiper-wrapper"&gt;
+&lt;li class="swiper-slide"&gt;&lt;a href="/"&gt;&lt;span&gt;首页&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/mv/"&gt;&lt;span&gt;电影&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide active"&gt;&lt;a href="/tv/"&gt;&lt;span&gt;剧集&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/ac/"&gt;&lt;span&gt;动漫&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/trailers/"&gt;&lt;span&gt;预告&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/vipplay/"&gt;&lt;span&gt;解析&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="javascript:ourl()"&gt;&lt;span&gt;备用网址&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/gbook/"&gt;&lt;span&gt;留言&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;
+&lt;script&gt;
+var mNav = new Swiper('#mNav', {
+    freeMode: true,
+    centeredSlides : true,
+    centeredSlidesBounds:true,
+    slidesPerView: 'auto',
+    speed: 50,
+    //slideToClickedSlide: true,
+    //touchReleaseOnEdges:true,
+    //slideActiveClass : 'active',
+        on: {
+        tap: function() {
+            $("#mNav  .active").removeClass('active');
+            $("#mNav .swiper-slide").eq(this.clickedIndex).addClass('active');
+            this.slideTo(this.clickedIndex,50);
+        },
+        init: function(){
+            var toindex = $("#mNav .active").index();
+            this.slideTo(toindex, 0);
+            mNav.update();
+        }
+    }
+});
+&lt;/script&gt;&lt;main&gt;
+&lt;div id="video" style="margin:0 -0.6rem;width:-webkit-fill-available;height:15rem;"&gt;&lt;/div&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<a href="../cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4d25213e63273e0d7d637c79637e">[email&#160;protected]</a>/dist/hls.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<a href="../cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f6909a80d89c85b6c7d8c3d8c6">[email&#160;protected]</a>/dist/flv.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"&gt;&lt;/script&gt;
+&lt;secion&gt;
+&lt;h2&gt;酷云&lt;span class="right"&gt;&lt;a class="next" href="/py/lNWZ1ATb3oGM_2.html"&gt;下一集&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul class="player"&gt;
+&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_1.html" class="on"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/secion&gt;
+&lt;div class="row"&gt;&lt;h2&gt;麻花云&lt;/h2&gt;&lt;ul class="player"&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_1.html"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;h2&gt;最大云&lt;/h2&gt;&lt;ul class="player"&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_1.html"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;h2&gt;OK云&lt;/h2&gt;&lt;ul class="player"&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_1.html"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;h2&gt;极速标清&lt;/h2&gt;&lt;ul class="player"&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_1.html"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;secion&gt;
+&lt;h2&gt;剧集推荐&lt;/h2&gt;
+&lt;ul class="pic-list mg"&gt;
+&lt;li&gt;&lt;a href="/mv/wNnlzYzk2a.html" title="若能与你共乘海浪之上"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/1381b0000815cc00ee877.jpg" alt="若能与你共乘海浪之上" referrerpolicy="no-referrer" /&gt;&lt;span&gt;高清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;若能与你共乘海浪之上&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;爱情 奇幻 动画 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNnxmYxITM.html" title="神弃之地"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/138160001ff5518864b8d.jpg" alt="神弃之地" referrerpolicy="no-referrer" /&gt;&lt;span&gt;标清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;神弃之地&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;剧情 惊悚 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNnFGZ5kmN.html" title="刺猬索尼克"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/137ab0000bfa9641c6c2e.jpg" alt="刺猬索尼克" referrerpolicy="no-referrer" /&gt;&lt;span&gt;高清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;刺猬索尼克&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;动作 喜剧 冒险 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNnZDOhpWN.html" title="决战中途岛"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/1384e00005a8e1263a4f0.jpg" alt="决战中途岛" referrerpolicy="no-referrer" /&gt;&lt;span&gt;高清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;决战中途岛&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;剧情 战争 历史 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNnRWOywGa.html" title="大赢家"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/1379b000100ebca710c8c.jpg" alt="大赢家" referrerpolicy="no-referrer" /&gt;&lt;span&gt;标清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;大赢家&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;喜剧 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNjNmZnFma.html" title="仲夏夜惊魂"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/137f100009371a5852768.jpg" alt="仲夏夜惊魂" referrerpolicy="no-referrer" /&gt;&lt;span&gt;高清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;仲夏夜惊魂&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;剧情 恐怖 惊悚 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/secion&gt;
+&lt;/main&gt;
+&lt;script&gt;
+const dp = new DPlayer({
+    container: document.getElementById('video'),
+    screenshot: true,
+    preload: 'metadata',
+    volume: 1.0,
+    video: {
+        url: ''
+    }
+});
+geturl('https://diaoshi.dehua-kuyun.com/20200903/14726_2451c732/index.m3u8');
+var astart = new Date(new Date(new Date().toLocaleDateString()).getTime()+24*60*60*1000-1);
+var begin = new Date();
+var aend = new Date(astart);
+var adt0 = (aend.getTime() - begin.getTime()) / 3600000;
+var pycount=10;
+if(getCookie('pyad')){
+if(getCookie('pyad')&gt;4){pycount=0;}
+var pynum=getCookie('pyad');pynum++;
+}else{
+var pynum=1;
+}
+setCookie('pyad',pynum,'/',adt0);
+function adremove(){$('#playad').remove();dp.play();}
+function jj(){
+if (pycount == 0){adremove();}else if(pycount&gt;0){
+$('#pp&gt;font').text(pycount);pycount -= 1;setTimeout(function () {jj(pycount);}, 1000);}
+if(pycount == 5){$('#pp').append('&lt;button onclick="adremove()" style="margin-left:1rem;font-size:0.8rem;margin-left:1rem;padding:0.1rem;"&gt;关闭广告&lt;/button&gt;');}
+}
+function geturl(url){if(url.indexOf('.m3u8')&gt;=0){dp.switchVideo({url: url});}else{pyjs(url);}}
+function pyjs(url){
+$('#video').append('&lt;div id="loading" style="text-align:center;z-index:20;background-color:black;top: 0;position: absolute;display: table;width:100%;height:100%;font-size:0.8rem;"&gt;&lt;div style="width:100%;height:100%;color:#999;display:table-cell;vertical-align: middle;"&gt;&lt;span class="tips"&gt;正在加载中，请稍候...&lt;/div&gt;&lt;/div&gt;');
+$.ajax({type:"post",url:'/playjson/index.php',data:{'url':url},dataType:'json',timeout:10000,success:function(data){
+if(data.code==200){
+var typer='auto';if(data.type=='hls'||data.type=='m3u8'){typer='hls';}dp.switchVideo({url: data.url,type:typer});
+}else{
+$('.tips').text('加载失败，请刷新重试或切换播放源');
+}},
+complete : function(XMLHttpRequest,status){
+if(status=='timeout'){
+$('.tips').text('请求超时，请刷新重试或切换播放源');
+}}});
+}
+dp.on('loadstart', function () {
+$.getScript('/ajax/historys/lNWZ1ATb3oGM_'+page+'/');
+$('#loading').remove();
+$('#video').append('&lt;div id="playad" style="background-color:black;z-index:99;top:0;position:absolute;width:100%;height:100%;"&gt;&lt;div id="pp" style="position:absolute;z-index:100;color:#fff;padding:0.8rem;right:0;"&gt;广告倒计时 &lt;font style="color:#f90;"&gt;&lt;/font&gt; 秒&lt;/div&gt;&lt;a href="https://www.yb2992.vip" target="_blank" style="background:url(https://p.pstatp.com/origin/1374a000205bdcde4096a.jpg) center center no-repeat;background-size:100% auto;width:100%;height:100%;display:block;"&gt;&lt;/a&gt;&lt;/div&gt;');
+jj();
+});
+var page=1;
+var arr={'2':['https://diaoshi.dehua-kuyun.com/20200903/14730_0364a269/index.m3u8','第02集'],'3':['https://diaoshi.dehua-kuyun.com/20200903/14731_e879fd88/index.m3u8','第03集'],'4':['https://diaoshi.dehua-kuyun.com/20200910/15603_353926cc/index.m3u8','第04集'],'5':['https://diaoshi.dehua-kuyun.com/20200910/15621_c50d6da8/index.m3u8','第05集'],'6':['https://diaoshi.dehua-kuyun.com/20200917/16416_ccd83ba6/index.m3u8','第06集'],'7':['https://diaoshi.dehua-kuyun.com/20200917/16451_1591de4f/index.m3u8','第07集'],'8':['https://diaoshi.dehua-kuyun.com/20200924/17199_9227cc27/index.m3u8','第08集'],'9':['https://diaoshi.dehua-kuyun.com/20200924/17204_c243626f/index.m3u8','第09集'],'10':['https://diaoshi.dehua-kuyun.com/20201001/17971_208710a9/index.m3u8','第10集'],};
+for (var keyname in arr){
+var lastkey=keyname;
+}
+function next(){
+dp.pause();//pycount=9;
+if(page&lt;lastkey){
+videotime=0;
+page++;geturl(arr[page]['0']);
+document.getElementsByTagName("title")['0'].innerText = '异星灾变'+arr[page]['1']+'-片库';
+history.replaceState('','','lNWZ1ATb3oGM_'+page+'.html');
+dp.notice('正在播放'+arr[page]['1'],'3000');
+$("[href]").each(function(){
+var href = $(this).attr('href');
+if(href.indexOf("lNWZ1ATb3oGM_"+(page-1)) &gt;= 0){
+$(this).removeClass("on");
+}
+if(href.indexOf("lNWZ1ATb3oGM_"+page) &gt;= 0){
+$(this).addClass("on");
+}
+});}
+if(page+1&gt;lastkey){$(".dplayer-next-icon").remove();}
+}
+$(".dplayer-play-icon").after('&lt;button class="dplayer-icon dplayer-next-icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="15 0 16 32"&gt;&lt;g transform="scale(0.03125 0.03125)"&gt;&lt;path d="M768 128v768h-128v-352l-320 320v-704l320 320v-352z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/button&gt;');
+$(".dplayer-next-icon").click(function(){
+    next();
+});
+dp.on('ended', function () {
+next();
+});
+var videotime=0;
+dp.on('timeupdate', function () {
+videotime++;
+if(videotime==20){
+$.getScript('/ajax/historys/lNWZ1ATb3oGM_'+page+'_time_'+Math.round(dp.video.currentTime)+'_'+Math.round(dp.video.currentTime/dp.video.duration*100)+'/');
+}else if(videotime&gt;150){
+videotime=0;
+}
+});
+setTimeout(function(){if(videotime==0){$.getScript('/ajax/historys/lNWZ1ATb3oGM_'+page+'_time_0_0/');}}, 5000);
+$(".player a,.next").click(function(){
+window.location.replace($(this).attr('href'));
+return false;
+});
+dp.on('fullscreen', function () {
+    screen.orientation.lock('landscape');
+});
+dp.on('fullscreen_cancel', function () {
+    screen.orientation.lock();
+});
+&lt;/script&gt;
+&lt;footer&gt;
+&lt;p&gt;本站所有资源均收集自互联网，没有提供影片资源存储，也未参与录制、上传。若本站收录的资源涉及您的版权或知识产权或其他利益，请附上版权证明邮件告知。&lt;/p&gt;
+&lt;p&gt;片库网 - www.pianku.tv&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+function check_webp(){return document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0;}
+FunLazy({
+placeholder: '/static/css/l.gif',
+beforeLazy: function(src){if(check_webp()){src=src.replace(".jpg",".webp");}return src;}
+});
+$(function() {$("#historys").html(historys());});
+(function(){
+if($(".input").val()!='') $('.clear').show();
+$('.clear').click(function(){$('.input').val('');$(this).hide();$(".input").focus();});
+$(".input").bind("input propertychange",function(event){
+$('.clear').show();
+if($(".input").val()=='') $('.clear').hide();
+});
+})();
+&lt;/script&gt;
+&lt;script src="/ajax/MyJs/"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>
+</div></div></p>
+<p><img src="../usr/uploads/2020/10/3454595621.png" alt="response-body 匹配与替换" /></p>
+<h2 id="验证表达式有效">XIV. 验证表达式有效</h2>
+<p>自己写的去广告规则是否生效？可以参考下文；</p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="12727.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2020/10/4070142549.jpg);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">利用 Quantumult X / Surge 完美屏蔽YouTube App广告（神机规则）</p>
+<div class="inster-summary text-muted">
+via 春潮频道；序言工欲善其事必先利其器，我还是很期待大家可以主动学习本文中提到的一些额外知识（如果能自我扩展那...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<h2 id="通过嵌入JavaScript文件去网页广告的方法">XV. 通过嵌入JavaScript文件去网页广告的方法</h2>
+<p>在了解 重写类型response-body的用法 后，为了更灵活的清理网页广告，或许可以深入学习 HTML/CSS/Javascript 三驾马车，通过 response-body 重写方法，在网页<code>&lt;head&gt;</code> 元素标签后嵌入CSS/Javascript文件的方式更好的去除广告；</p>
+<p><strong>以下示例仅做思路参考，未来不会随时间更新</strong>；</p>
+<pre><code>^https:?/\/www.nfmovies.com.* url response-body &lt;head&gt; response-body &lt;head&gt;&lt;script type="text/javascript" nonce="7575a050f63648a69e15f9694a7" src="//limbopro.com/nfmovies.js"&gt;&lt;/script&gt;</code></pre>
+<p>在网页中嵌入 Javascript 文件参考案例：<a href="https://github.com/limbopro/Adblock4limbo/tree/main/Adguard" target="_blank">https://github.com/limbopro/Adblock4limbo/tree/main/Adguard</a></p>
+<h2 id="通过嵌入CSS文件去网页广告的方法">XVI. 通过嵌入CSS文件去网页广告的方法</h2>
+<pre><code>^https:?/\/www.nfmovies.com.* url response-body &lt;head&gt; response-body &lt;head&gt;&lt;link rel="stylesheet" href="https://limbopro.com/Adblock4limbo.css" target="_blank"  type="text/css"&gt;</code></pre>
+<p>以上是通过 <code>response-body</code> 重写嵌入 css 文件的示例，<a href="../Adblock4limbo.css" target="_blank">https://limbopro.com/Adblock4limbo.css</a> 大家可以打开看下内容，其目的是为了使样式 myui-ra-container 失效，以此使得该 div 元素无法显示；</p>
+<p>在网页中嵌入 CSS 文件参考案例：<a href="https://github.com/limbopro/Adblock4limbo/tree/main/CSS" target="_blank">https://github.com/limbopro/Adblock4limbo/tree/main/CSS</a></p>
+<h2 id="附注">XVII. 附注</h2>
+<p>更多精彩请关注我们的电报频道：<a href="https://t.me/limboprossr" target="_blank">https://t.me/limboprossr</a> 收取一手资讯；<br />
+专属讨论群组：<a href="https://t.me/Adblock4limbo" target="_blank" target="_blank">https://t.me/Adblock4limbo</a></p><hr class="content-copyright" style="margin-top:50px" /><blockquote class="content-copyright" style="font-style:normal"><p class="content-copyright">版权属于：毒奶 <br><p class="content-copyright">联系我们：<a class="content-copyright" href="../6.html" target="_blank" target="_blank">https://limbopro.com/6.html</a><br>毒奶搜索：<a class="content-copyright" href="../search.html" target="_blank" target="_blank">https://limbopro.com/search.html</a> <br>毒奶导航：<a class="content-copyright" href="../daohang/index.html" target="_blank" target="_blank">https://limbopro.com/daohang/index.html</a> </p></p><p class="content-copyright">本文链接：<a class="content-copyright" href="12782.html" target="_blank">https://limbopro.com/archives/12782.html</a></p><p class="content-copyright"><p class="content-copyright"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-Hans" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="../by-nc-sa.png"></a><br>本文采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-Hans" target="_blank" target="_blank" target="_blank">CC BY-NC-SA 4.0 许可协议</a>，转载或引用本文时请遵守许可协议，注明出处、不得用于商业用途！</p></blockquote></div>
+
+<div class="show-foot"><div class="notebook">
+<i class="fontello fontello-clock-o"></i>
+<span>最后修改：2021 年 04 月 25 日 12 : 21 PM</span>
+</div><div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请保留本文转载地址，著作权归作者所有"><span>© 允许规范转载</span>
+</div>
+</div>
+
+</div>
+</article>
+</div>
+
+<nav class="m-t-lg m-b-lg">
+<ul class="pager">
+<li class="next"> <a class="box-shadow-wrap-normal" href="12727.html" title="利用 Quantumult X / Surge 完美屏蔽YouTube App广告（神机规则）" data-toggle="tooltip">
+下一篇 </a></li>
+<a href="https://twitter.com/intent/tweet?text=发现一篇好文，分享给你🎉  &raquo; 重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试）" data-url="https://limbopro.com/archives/12782.html&nbsp;作者&nbsp;@limboprossr" class="twitter-mention-button" data-lang="zh-cn" data-size="large">分享本文</a>
+<li class="previous"> <a class="box-shadow-wrap-normal" href="12879.html" title="后翼弃兵 The Queen's Gambit (2020)" data-toggle="tooltip"> 上一篇 </a></li>
+</ul>
+</nav>
+
+
+<div id="sidebar">
+<section id="tag_cloud-2" class="widget widget_tag_cloud wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">文章标签</h5>
+<div class="post-tags tags l-h-2x">
+<a href="../tag/广告拦截/index.html">广告拦截</a> <a href="../tag/QuantumultX/index.html">QuantumultX</a> <a href="../tag/Quantumult-X/index.html">Quantumult X</a></div>
+</section>
+</div>
+
+<div> <a target="_blank" href="12904.html"><img src="../usr/uploads/2021/03/3476932119.png" style="width: auto;"></a> </div>
+<div> <a target="_blank" href="adguard.html"><img src="../usr/uploads/2021/03/2420019737.png" style="width: auto;"></a> </div>
+
+
+<div> <a target="_blank" href="../win-win.html"><img src="../usr/uploads/2021/01/830145139.png" style="width: auto;"></a> </div>
+<a target="_blank" href="../search.html"><img src="../usr/uploads/2021/12/2084042701.png" alt="点击进入毒奶搜索，搜万物。" /></a>
+
+<div class="gcse-search"></div>
+<p></p>
+<style type="text/css"> 
+blockquote{
+background-color: #000000;
+border-left: 0px solid #000000;
+color:#999999;
+}
+</style>
+<p></p>
+<br>
+<h5 class="widget-title m-t-none text-md">相关文章推荐</h5>
+<p></p>
+<li class="list-group-item"><a href="block-contentfarm-Quantumultx.html" title="利用 Quantumult X 和 JavaScript 屏蔽「内容农场/CSDN/KKnews」及谷歌搜索广告，让谷歌搜索更清爽实用。">利用 Quantumult X 和 JavaScript 屏蔽「内容农场/CSDN/KKnews」及谷歌搜索广告，让谷歌搜索更清爽实用。</a></li>
+<li class="list-group-item"><a href="QuantumultX-UI-Action.html" title="如何在Quantumult X UI界面查询节点信息 - 如Netflix&amp;Disney+等流媒体解锁状态以及IP是否被Google送中？">如何在Quantumult X UI界面查询节点信息 - 如Netflix&amp;Disney+等流媒体解锁状态以及IP是否被Google送中？</a></li>
+<li class="list-group-item"><a href="19460.html" title="关于毒奶搜索 - 看不到搜索框的原因及解决办法">关于毒奶搜索 - 看不到搜索框的原因及解决办法</a></li>
+<li class="list-group-item"><a href="19265.html" title="BoxJS（With Quantumult X） - Disney+ 和Netflix 策略组批量解锁检测+一键切换节点">BoxJS（With Quantumult X） - Disney+ 和Netflix 策略组批量解锁检测+一键切换节点</a></li>
+<li class="list-group-item"><a href="18926.html" title="科学上网 - QuantumultX - 执行 JavaScript 脚本以检测相应代理节点 Netflix/YouTube 解锁状态（TASK自动化执行检测以及更多）">科学上网 - QuantumultX - 执行 JavaScript 脚本以检测相应代理节点 Netflix/YouTube 解锁状态（TASK自动化执行检测以及更多）</a></li>
+<p></p>
+<br>
+<h5 class="widget-title m-t-none text-md">最新文章推荐</h5>
+<p></p>
+<li class="list-group-item"><a href="20791.html">Chrome/Edge/Firefox浏览器扩展 - Dualsub（通用字幕渲染器/机器翻译） ，实现 YouTube 其他语言/中文 双字幕显示！</a></li>
+<li class="list-group-item"><a href="block-contentfarm-Quantumultx.html">利用 Quantumult X 和 JavaScript 屏蔽「内容农场/CSDN/KKnews」及谷歌搜索广告，让谷歌搜索更清爽实用。</a></li>
+<li class="list-group-item"><a href="Falling-snowflakes.html">Typecho优化 - 为网站配置下雪效果，圣诞雪花动态特效 JS 分享</a></li>
+<p></p>
+<br>
+<div id="disqus_thread"></div>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+/**
+ * *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ * *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+ * var disqus_config = function () {
+ * this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+ * this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+ * };
+ * */
+ 
+
+function loadDisqus() {
+  // Disqus via Sukka's Blog
+  var d = document, s = d.createElement('script');
+  s.src = 'https://limbopro-xyz.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  window.disqus_config = function () {
+  this.page.url = limbopro.com;
+  
+  };
+  // 如果你和我一样在用 DisqusJS，loadDisqus() 里就应该是 DisqusJS 的初始化代码 new DisqusJS({...})
+}
+
+// 通过检查 window 对象确认是否在浏览器中运行
+var runningOnBrowser = typeof window !== "undefined";
+// 通过检查 scroll 事件 API 和 User-Agent 来匹配爬虫
+var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+// 检查当前浏览器是否支持 IntersectionObserver API
+var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+
+// 一个小 hack，将耗时任务包裹在 setTimeout(() => { }, 1) 中，可以推迟到 Event Loop 的任务队列中、等待主调用栈清空后才执行，在绝大部分浏览器中都有效
+// 其实这个 hack 本来是用于优化骨架屏显示的。一些浏览器总是等 JavaScript 执行完了才开始页面渲染，导致骨架屏起不到降低 FCP 的优化效果，所以通过 hack 将耗时函数放到骨架屏渲染完成后再进行。
+setTimeout(function () {
+  if (!isBot && supportsIntersectionObserver) {
+    // 当前环境不是爬虫、并且浏览器兼容 IntersectionObserver API
+    var disqus_observer = new IntersectionObserver(function(entries) {
+      // 当前视窗中已出现 Disqus 评论框所在位置
+      if (entries[0].isIntersecting) {
+        // 加载 Disqus
+        loadDisqus();
+        // 停止当前的 Observer
+        disqus_observer.disconnect();
+      }
+    }, { threshold: [0] });
+    // 设置让 Observer 观察 #disqus_thread 元素
+    disqus_observer.observe(document.getElementById('disqus_thread'));
+  } else {
+    // 当前环境是爬虫、或当前浏览器其不兼容 IntersectionObserver API
+    // 直接加载 Disqus
+    loadDisqus();
+  }
+}, 1);
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> </div>
+</div>
+
+<aside class="asideBar col w-md bg-white-only bg-auto no-border-xs" role="complementary">
+<div id="sidebar">
+<section id="tabs-4" class="widget widget_tabs clear">
+<div class="nav-tabs-alt no-js-hide">
+<ul class="nav nav-tabs nav-justified box-shadow-bottom-normal tablist" role="tablist">
+<li data-index="0" class="active" role="presentation"> <a href="12782.html#widget-tabs-4-hots" role="tab" aria-controls="widget-tabs-4-hots" aria-expanded="true" data-toggle="tab"><div class="sidebar-icon wrapper-sm"><i data-feather="thumbs-up"></i></div><span class="sr-only">热门文章</span> </a></li>
+</ul>
+</div>
+<div class="tab-content">
+
+<section id="tag_cloud-2" class="widget widget_tag_cloud wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">热门分类</h5>
+<li class="list-group-item text-second"><span class="nav-icon"><i data-feather="battery-charging"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_self" href="../category/Typecho/index.html">
+39</a></span>
+<a target="_self" href="../category/Typecho/index.html">建站指南</a></li>
+<li class="list-group-item text-second"><span class="nav-icon"><i data-feather="triangle"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_self" href="../tag/Cloudflare/index.html">
+8</a></span>
+<a target="_self" href="../tag/Cloudflare/index.html">网站防御</a></li>
+<li class="list-group-item text-second"><span class="nav-icon"><i data-feather="tool"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_self" href="../category/tools/index.html">
+60</a></span>
+<a target="_self" href="../category/tools/index.html">实用工具</a></li>
+<li class="list-group-item text-second"><span class="nav-icon"><i data-feather="box"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_self" href="../category/software-skills/index.html">
+77</a></span>
+<a target="_self" href="../category/software-skills/index.html">软件百科</a></li>
+<li class="list-group-item text-second"><span class="nav-icon"><i data-feather="hash"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_self" href="../category/shell/index.html">
+12</a></span>
+<a target="_self" href="../category/shell/index.html">常用命令</a></li>
+<li class="list-group-item text-second"><span class="nav-icon"><i data-feather="film"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_self" href="../category/movies/index.html">
+44</a></span>
+<a target="_self" href="../category/movies/index.html">影视剧集</a></li>
+<li class="list-group-item text-second"><span class="nav-icon"><i data-feather="instagram"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_self" href="../category/instagram/index.html">
+39</a></span>
+<a target="_self" href="../category/instagram/index.html">美图欣赏</a></li>
+<li class="list-group-item text-second"><span class="nav-icon"><i data-feather="navigation-2"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_self" href="../category/ssr/index.html">
+35</a></span>
+<a target="_self" href="../category/ssr/index.html">科学上网</a></li>
+</section>
+
+<section id="tag_cloud-2" class="widget widget_tag_cloud wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">热门文章推荐</h5>
+<li class="list-group-item">
+<a href="3629.html" class="pull-left thumb-sm m-r"><img src="../usr/themes/handsome/assets/img/sj2/10.jpg" class="img-40px normal-shadow img-square"></a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="3629.html" title="iOS 使用 Surge/Quantumult/Shadowrocket /QuantumultX 解锁 TikTok （国际版）区域限制（免拔卡）持续更新"> iOS 使用 Surge/Quantumult/Shadowrocket /QuantumultX 解锁 TikTok （国际版）区域限制（免拔卡）持续更新 </a></h4>
+</div></li><li class="list-group-item">
+<a href="2561.html" class="pull-left thumb-sm m-r"><img src="../usr/themes/handsome/assets/img/sj2/8.jpg" class="img-40px normal-shadow img-square"></a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="2561.html" title="Rules / 分流/去广告规则：Surge / Shadowrocket / Quantumult/ Quantumult X  及详细配置步骤教程（萌新小白版本）"> Rules / 分流/去广告规则：Surge / Shadowrocket / Quantumult/ Quantumult X 及详细配置步骤教程（萌新小白版本） </a></h4>
+</div></li><li class="list-group-item">
+<a href="subconverter.html" class="pull-left thumb-sm m-r"><img src="../usr/themes/handsome/assets/img/sj2/6.jpg" class="img-40px normal-shadow img-square"></a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="subconverter.html" title="订阅转换 - API - 让你的Clash(A/W/X) ，Surge重新焕发生机"> 订阅转换 - API - 让你的Clash(A/W/X) ，Surge重新焕发生机 </a></h4>
+</div></li><li class="list-group-item">
+<a href="3846.html" class="pull-left thumb-sm m-r"><img src="../usr/themes/handsome/assets/img/sj2/1.jpg" class="img-40px normal-shadow img-square"></a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="3846.html" title="QuantumultX 使用教程：策略组&amp;分流规则&amp;自定义图标&amp;过滤节点的进阶玩法"> QuantumultX 使用教程：策略组&amp;分流规则&amp;自定义图标&amp;过滤节点的进阶玩法 </a></h4>
+</div></li><li class="list-group-item">
+<a href="nicegram.html" class="pull-left thumb-sm m-r"><img src="../usr/themes/handsome/assets/img/sj2/5.jpg" class="img-40px normal-shadow img-square"></a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="nicegram.html" title="解除电报敏感內容限制教程 - Telegram（电报）"> 解除电报敏感內容限制教程 - Telegram（电报） </a></h4>
+</div></li>
+</section>
+
+<section id="tag_cloud-2" class="widget widget_tag_cloud wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">随机文章推荐</h5>
+<li class="list-group-item">
+<a href="328.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="328.html" title=".log 是一个了不起的东西"> .log 是一个了不起的东西 </a></h4>
+</div></li><li class="list-group-item">
+<a href="1035.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="1035.html" title="用 WebBench 进行网站压力测试"> 用 WebBench 进行网站压力测试 </a></h4>
+</div></li><li class="list-group-item">
+<a href="3221.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="3221.html" title="肖申克的救赎 The Shawshank Redemption (1994)"> 肖申克的救赎 The Shawshank Redemption (1994) </a></h4>
+</div></li><li class="list-group-item">
+<a href="1066.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="1066.html" title="蓝灯"> 蓝灯 </a></h4>
+</div></li><li class="list-group-item">
+<a href="10416.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="10416.html" title="Quantumult X JS 脚本说明及毒奶预配置文件"> Quantumult X JS 脚本说明及毒奶预配置文件 </a></h4>
+</div></li><li class="list-group-item">
+<a href="11303.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="11303.html" title="隐秘的角落（高清全集）丨追剧小组"> 隐秘的角落（高清全集）丨追剧小组 </a></h4>
+</div></li> </section>
+
+
+<div id="widget-tabs-4-random" class="tab-pane fade wrapper-md no-js-show" role="tabpanel">
+<h5 class="widget-title m-t-none text-md">随机文章</h5>
+<ul class="list-group no-bg no-borders pull-in">
+<li class="list-group-item">
+<a href="2056.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="2056.html" title="Cloudflare 必知知识点丨无限计量与搜索引擎机器人白名单"> Cloudflare 必知知识点丨无限计量与搜索引擎机器人白名单 </a></h4>
+</div></li><li class="list-group-item">
+<a href="speedtest.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="speedtest.html" title="Speedtest丨服务器测速神器"> Speedtest丨服务器测速神器 </a></h4>
+</div></li><li class="list-group-item">
+<a href="12879.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="12879.html" title="后翼弃兵 The Queen's Gambit (2020)"> 后翼弃兵 The Queen's Gambit (2020) </a></h4>
+</div></li><li class="list-group-item">
+<a href="8002.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="8002.html" title="10部好看的电影推荐给你"> 10部好看的电影推荐给你 </a></h4>
+</div></li><li class="list-group-item">
+<a href="1084.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="1084.html" title="薛兆丰的经济学讲义丨书单推荐第一期"> 薛兆丰的经济学讲义丨书单推荐第一期 </a></h4>
+</div></li><li class="list-group-item">
+<a href="3349.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="3349.html" title="我们的星球 Our Planet (2019)"> 我们的星球 Our Planet (2019) </a></h4>
+</div></li> </ul>
+</div>
+</div>
+</section>
+
+<section id="blog_info" class="widget widget_categories wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">博客信息</h5>
+<ul class="list-group box-shadow-wrap-normal">
+<li class="list-group-item"><span class="blog-info-icons"> <i data-feather="award"></i></span> <span class="badge
+           pull-right">393</span>文章数目</li>
+
+<li class="list-group-item"><span class="blog-info-icons"> <i data-feather="calendar"></i></span>
+<span class="badge
+           pull-right">2年305天</span>建站已有</li>
+<li class="list-group-item"><span class="blog-info-icons"> <i data-feather="clock"></i></span>
+<span class="badge
+           pull-right">3407天</span>关站倒计时</li>
+<li class="list-group-item"><span class="blog-info-icons"> <i data-feather="activity"></i></span> <span class="badge
+           pull-right">2 星期前</span>最后活动</li>
+<li class="list-group-item"><span class="blog-info-icons"> <i data-feather="cpu"></i></span> <span class="badge
+           pull-right">260 ms</span>TTFB</li>
+
+</ul>
+</section>
+
+<section id="blog_info" class="widget widget_categories wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">其他平台</h5>
+<ul class="list-group box-shadow-wrap-normal">
+<li class="list-group-item text-second"><span class="blog-info-icons"> <i data-feather="send"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_blank" href="https://bit.ly/2xrozAl">limbopro</a></span><a target="_blank" href="https://t.me/limboprossr">Telegram</a></li>
+<li class="list-group-item text-second"><span class="blog-info-icons"> <i data-feather="github"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_blank" href="https://bit.ly/3iCP0GL">毒奶博主</a></span><a target="_blank" href="https://github.com/limbopro">Github</a></li>
+<li class="list-group-item text-second"><span class="blog-info-icons"> <i data-feather="twitter"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_blank" href="https://bit.ly/3sFWu0d">毒奶博主</a></span><a target="_blank" href="https://twitter.com/limboprossr">Twitter</a></li>
+<li class="list-group-item text-second"><span class="blog-info-icons"> <i data-feather="instagram"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_blank" href="https://bit.ly/3bYHXXQ">毒奶博主</a></span><a target="_blank" href="https://www.instagram.com/limboprossr/">Instagram</a></li>
+<li class="list-group-item text-second"><span class="blog-info-icons"> <i data-feather="youtube"></i></span>
+<span class="badge pull-right" style="color:white"><a target="_blank" href="https://bit.ly/2VJcz7o">毒奶博主</a></span><a target="_blank" href="https://www.youtube.com/channel/UCopiQ6DaRujU9iV9g-zrrMQ">Youtube</a></li>
+</ul>
+</section>
+
+<section id="a_d_sidebar" class="widget widget_categories wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">广告</h5>
+
+<a href='机场推荐.html'><img src='../usr/uploads/2021/10/2616779961.png' alt='CatNet is Ready 4 you' title='CatNet is Ready 4 you' border='0' /></a>
+
+<br></br>
+<a class="twitter-timeline" data-height="480" data-dnt="true" data-theme="dark" href="https://twitter.com/limboprossr?ref_src=twsrc%5Etfw">Tweets by limboprossr</a>
+<br></br>
+<a href="https://twitter.com/limboprossr?ref_src=twsrc%5Etfw" class="twitter-follow-button" target="_blank" data-show-count="false">Follow @limboprossr</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br><br>
+<script>
+    function displayTime() {
+        document.getElementById("time").innerHTML = new Date().toTimeString();
+    } 
+    setInterval(displayTime,1000);      // 每隔1秒钟调用displayTime函数
+</script> </section>
+
+
+<section id="tag_cloud-2" class="widget widget_tag_cloud wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">标签云</h5>
+<div class="post-tags tags l-h-2x">
+<a href="../tag/广告拦截/index.html">广告拦截</a> <a href="../tag/QuantumultX/index.html">QuantumultX</a> <a href="../tag/Quantumult-X/index.html">Quantumult X</a> </div>
+</section>
+
+<section id="tag_cloud-2" class="widget widget_tag_cloud wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">更多文章推荐</h5>
+<li class="list-group-item">
+<a href="751.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="751.html" title="Instagram 美女账号精选丨第03期"> Instagram 美女账号精选丨第03期 </a></h4>
+</div></li><li class="list-group-item">
+<a href="274.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="274.html" title="什么是爱情？"> 什么是爱情？ </a></h4>
+</div></li><li class="list-group-item">
+<a href="19.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="19.html" title="韩国画家丨zipcy 梁世恩"> 韩国画家丨zipcy 梁世恩 </a></h4>
+</div></li><li class="list-group-item">
+<a href="DoH.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="DoH.html" title="如何利用DoH加密DNS，保护DNS查询及响应？！"> 如何利用DoH加密DNS，保护DNS查询及响应？！ </a></h4>
+</div></li><li class="list-group-item">
+<a href="3629.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="3629.html" title="iOS 使用 Surge/Quantumult/Shadowrocket /QuantumultX 解锁 TikTok （国际版）区域限制（免拔卡）持续更新"> iOS 使用 Surge/Quantumult/Shadowrocket /QuantumultX 解锁 TikTok （国际版）区域限制（免拔卡）持续更新 </a></h4>
+</div></li><li class="list-group-item">
+<a href="8515.html" < a>
+<div class="clear">
+<h4 class="h5 l-h text-second"> <a href="8515.html" title="无需翻墙，通过修改hosts文件以访问被墙网站（如机场/毒奶博客）"> 无需翻墙，通过修改hosts文件以访问被墙网站（如机场/毒奶博客） </a></h4>
+</div></li></section>
+
+
+<section id="tag_cloud-2" class="widget widget_tag_cloud wrapper-md clear">
+<h5 class="widget-title m-t-none text-md">北京时间</h5>
+<div class="post-tags tags l-h-2x">
+
+<p id="time"></p>
+</div>
+</section>
+ 
+</div>
+</aside>
+
+</div>
+</main>
+<div id="morphing-content" class="hidden read_mode_article">
+<div class="page">
+<h1 class="title">重写类型response-body的用法丨利用 Quantumult X 替换网页元素实现去广告（正则表达式以及开发者工具、调试）</h1>
+<div class="metadata singleline"><a href="12782.html#" rel="author" class="byline">毒奶</a>&nbsp;•&nbsp;<span class="delimiter"></span><time class="date">2020 年 10 月 24 日</time></div>
+<div id="morphing-content-real_origin"><div class="tox-index"><div class="tox-title">本文目录 <span class="tox-toggle">[<a id="content-index-togglelink" href="../go/amF2YXNjcmlwdDpjb250ZW50X2luZGV4X3RvZ2dsZVRvYygp" target="_blank">隐藏</a>]</span></div><div id="toc-content"><ul><li class='toc-level2'><a href='12782.html#主理人序'>I. 主理人序</a></li><li class='toc-level2'><a href='12782.html#重写类型'>II. 重写类型</a></li><li class='toc-level2'><a href='12782.html#会使用到的工具'>III. 会使用到的工具</a></li><li class='toc-level2'><a href='12782.html#成功示例'>IV. 成功示例</a></li><li class='toc-level2'><a href='12782.html#一份完整有效的_conf_内容示例'>V. 一份完整有效的 conf 内容示例</a></li><li class='toc-level2'><a href='12782.html#QuantumultX-分流'>VI. QuantumultX-分流</a></li><li class='toc-level2'><a href='12782.html#QuantumultX-重写'>VII. QuantumultX-重写</a></li><li class='toc-level2'><a href='12782.html#开发者工具应用示例'>VIII. 开发者工具应用示例</a></li><li class='toc-level2'><a href='12782.html#去网页广告的2种基本思路'>IX. 去网页广告的2种基本思路</a></li><li class='toc-level2'><a href='12782.html#分流/重写在去广告上的应用场景'>X. 分流/重写在去广告上的应用场景</a></li><li class='toc-level2'><a href='12782.html#找到广告'>XI. 找到广告</a></li><li class='toc-level2'><a href='12782.html#去除广告'>XII. 去除广告</a></li><li class='toc-level2'><a href='12782.html#正则表达式的运用'>XIII. 正则表达式的运用</a></li><li class='toc-level2'><a href='12782.html#验证表达式有效'>XIV. 验证表达式有效</a></li><li class='toc-level2'><a href='12782.html#通过嵌入JavaScript文件去网页广告的方法'>XV. 通过嵌入JavaScript文件去网页广告的方法</a></li><li class='toc-level2'><a href='12782.html#通过嵌入CSS文件去网页广告的方法'>XVI. 通过嵌入CSS文件去网页广告的方法</a></li><li class='toc-level2'><a href='12782.html#附注'>XVII. 附注</a></li></ul></li></ul></div></div>
+
+<hr><p><img src="../usr/uploads/2020/10/684532821.jpg" alt="photo_2020-08-21_01-58-39.jpg" /></p>
+<p>via 春潮频道；</p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="15067.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2021/03/2749742181.png);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">前端三剑客入门教程 - HTML/CSS/JavaScript</p>
+<div class="inster-summary text-muted">
+主理人序知其然，知其所以然；我们每天所接触的，如浏览器，URL，早已习以为常，但似乎从未真正的了解它们；前端是什么...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="14973.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2021/03/3575210713.png);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">去网页广告 - 引入新的CSS文件实现去网页广告教程（for QuantumultX）</p>
+<div class="inster-summary text-muted">
+via CSS简介 WEB前端三剑客之二；Web 技术参考HTML是一种标记语言，用来结构化我们的网页内容并赋予内...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="14044.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2021/01/3847766637.png);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">重写类型 302/307/reject 的用法丨利用 Quantumult X 替换URL链接实现请求重定向（正则表达式）</p>
+<div class="inster-summary text-muted">
+主理人说工欲善其事，必先利其器。先思考，在进行运用，多运用。不消一刻钟，你便已经入门到精通。重写类型打开 Quan...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="adguard.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2019/11/4035067133.jpg);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">Adguard- 女朋友也喜欢用的广告拦截程序（屏蔽广告、跟踪器以及安装油猴脚本）</p>
+<div class="inster-summary text-muted">
+本文隶属于 软件百科 分类，点击分类名称可以查看更多相关文章；主理人推荐序 直接装Adguard的浏览器扩展（免费...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="safari-content-blocker.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2020/03/2088172066.png);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">iOS Safari 内容拦截器 - 全方位去网页广告（免费，开源，社区维护）</p>
+<div class="inster-summary text-muted">
+*PC/Mac平台 浏览器（Chrome/Safari/Firefox等）去广告可参考上述文章； Quantum...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<h2 id="主理人序">I. 主理人序</h2>
+<p>自己动手的快乐，只有自己知道，另外欢迎加入毒奶去广告计划。（里面有丰富的实践示例）</p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="12904.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2020/11/3738758189.jpg);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">即刻加入毒奶去广告计划（Quantumult X for iOS）</p>
+<div class="inster-summary text-muted">
+via Twitter；前序 使用平台： iOS使用软件： Quantumult X涉及模块： Rewrite/M...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<h2 id="重写类型">II. 重写类型</h2>
+<p>打开 Quantumultx - 点击<strong>右下角三菱按钮</strong> - 划至<code>重写</code>模块 - 点击<code>添加</code>按钮 - OK，你会看到很多有意思的重写类型 ，每一个都值得学习；本文将就 <code>response-body</code>的用法进行着重介绍；</p>
+<h2 id="会使用到的工具">III. 会使用到的工具</h2>
+<p>1.QuantumultX - [Rewrite]/[Filter]；<br />
+2.<a href="../go/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9MZWFybi9EaXNjb3Zlcl9icm93c2VyX2RldmVsb3Blcl90b29scw==" target="_blank">Chrome 开发者工具</a>；<br />
+3.<a href="../go/aHR0cHM6Ly9kZWVyY2hhby5jbi90dXRvcmlhbHMvcmVnZXgvcmVnZXguaHRt" target="_blank">正则表达式30分钟入门指南</a>；<br />
+4.<a href="../go/aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3JlZ2V4Lw==" target="_blank">正则表达式在线测试工具</a>；<br />
+5.<a href="../go/aHR0cHM6Ly9hZGd1YXJkLmNvbS96aF9jbi9ibG9nL2FkZ3VhcmQtZmlsdGVycy5odG1s" target="_blank">Adguard 中文过滤器</a> 涵盖绝大多数中文网站（志愿者数多）广告过滤规则；<br />
+6.QuantumultX - 调试 - 网络活动；</p>
+<p><strong>通读本文你将会得到三个好东西</strong><br />
+1.更加熟练的使用 QuantumultX；<br />
+2.谷歌浏览器开发者工具；<br />
+3.熟练的使用正则表达式（在这里只需入门即可）；<br />
+4.对HTML网页结构更加熟悉；（深入学习可参阅 <a href="../go/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSFRNTA==" target="_blank">HTML（超文本标记语言）</a>）；<br />
+5.使用正则匹配HTML相关元素如<code>&lt;div&gt;\&lt;img&gt;</code>，并进行替换以达到去广告的目的；</p>
+<h2 id="成功示例">IV. 成功示例</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-0bd8151fdea9ccfef22f3c58fdb83df842" aria-expanded="true"><div class="accordion-toggle"><span>近期成功去广告示例-供参考</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-0bd8151fdea9ccfef22f3c58fdb83df842" class="panel-body collapse in">
+</p>
+<p><strong>Quantumult X 用户去视频网站广告</strong> </p>
+<p>1.分流 引用 <a href="../Adblock4limbo.list" target="_blank">https://limbopro.com/Adblock4limbo.list</a> 可以点开看看里面内容<br />
+2.重写 引用 <a href="../Adblock4limbo.conf" target="_blank">https://limbopro.com/Adblock4limbo.conf</a> 可以点开看看里面内容<br />
+3.然后配置好证书（如已配置可忽略）</p>
+<p><strong>可去除以下6个视频网站广告（内页广告以及播放前广告跳过）</strong></p>
+<p><a href="../go/aHR0cHM6Ly9qYWJsZS50di8=" target="_blank">https://jable.tv/</a> NSFW<br />
+<a href="../go/aHR0cHM6Ly9uZXRmbGF2LmNvbS8=" target="_blank">https://netflav.com/</a> NSFW<br />
+<a href="../go/aHR0cHM6Ly9kZHJrLm1lLw==" target="_blank">https://ddrk.me/</a> 低端影视(完美<br />
+<a href="../go/aHR0cHM6Ly93d3cubmZtb3ZpZXMuY29tLw==" target="_blank">https://www.nfmovies.com/</a> 奈菲影视（完美<br />
+<a href="../go/aHR0cHM6Ly93d3cuZGlsaWxpdHYuY29tLw==" target="_blank">https://www.dililitv.com/</a> 嘀哩哩 （完美<br />
+<a href="../go/aHR0cHM6Ly9tLnBpYW5rdS5tZS8=" target="_blank">https://m.pianku.me/</a> 片库网（完美</p>
+<p><a href="https://www.google.com/search?q=%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&amp;oq=%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F" target="_blank">正则表达式</a>还在学习中，DIY去网页广告教程晚点会出。如有疑问可联系 <a href="https://t.me/limboprobot" target="_blank">@limboprobot</a></p>
+<p>部分规则有参考Adguard <a href="../go/aHR0cHM6Ly9hZGd1YXJkLmNvbS96aF9jbi9ibG9nL2FkZ3VhcmQtZmlsdGVycy5odG1s" target="_blank">中文过滤器</a> 书写 (这才是最强去广告集合</p>
+<p>后续更新：<a href="https://github.com/limbopro/Adblock4limbo" target="_blank">https://github.com/limbopro/Adblock4limbo</a><br />
+讨论群组：<a href="https://t.me/Adblock4limbo" target="_blank" target="_blank">https://t.me/Adblock4limbo</a></p>
+<p>
+</div></div></p>
+<h2 id="一份完整有效的_conf_内容示例">V. 一份完整有效的 conf 内容示例</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-b889804db5606de419bfabad577a72d041" aria-expanded="true"><div class="accordion-toggle"><span>完整示例</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-b889804db5606de419bfabad577a72d041" class="panel-body collapse in">
+</p>
+<pre><code>hostname = *.pianku.me
+#www.pianku.me adsblock
+^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body var pycount=10 response-body var pycount=0</code></pre>
+<p><strong>完整且合法的 conf 配置包含两个部分：</strong><br />
+1.<code>hostname</code>：主机名，<em>.pianku.me，其中</em>星号可代表任意字符、字符串：可以匹配到 m.pianku.me，x.pianku.me 等等；<br />
+2.<code>^https:?/\/\b..+pianku.\w{2,3}\b.*</code> 是正则表达式，用来匹配具体请求<code>URL</code>的，这条正则可以匹配到 <code>https://m.pianku.me/py/lJmM2kDN4cza_1.html?158064</code>（视频播放页面）；<code>var pycount=10</code> 匹配 HTTP 响应体中的内容，需要被替换的内容；<code>var pycount=0</code> 为替换内容；<code>^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body var pycount=10 response-body var pycount=0</code> 即将网页元素中 <code>var pycount=10</code> 替换为 <code>var pycount=0</code>；</p>
+<p><strong>即你可以将之理解为</strong>，先要有主机名（如 pianku.me ），没有的话 Quantumult X 就就没办法进行下一步匹配了；有了主机名之后，就要对具体的URL请求进行相对应的操作，这条URL符合哪些条件呢？就涉及到正则表达式（如 ^https:?/\/\b..+pianku.\w{2,3}\b.* ，用正则表达式的好处在于可以更精细的匹配想要去广告的URL；）；response-body 后的参数 也可以是 <strong>正则表达式</strong>（是的！虽然 var pycount=0 这一条很普通，但这也是一条表达式！）；</p>
+<p>视频广告倒计时，由10秒减少至0秒；</p>
+<p>
+</div></div></p>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-45b1cb964efefa3e5b34ea332cfb022783" aria-expanded="true"><div class="accordion-toggle"><span>Quantumult X 的两个模块</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-45b1cb964efefa3e5b34ea332cfb022783" class="panel-body collapse in">
+</p>
+<h2 id="QuantumultX-分流">VI. QuantumultX-分流</h2>
+<details>
+<summary>展开查看-分流</summary>
+<p><img src="../usr/uploads/2020/10/2917676429.jpg" alt="QuantumultX-分流-重写-去广告" /></p>
+</details>
+<p>以下这是一条去广告分流规则，即所有带<code>baidu.com</code>结尾的域名请求均会被拒绝，意味着你不能打开百度；可<strong>分解成3个部分</strong>，<code>类型</code>, <code>参数</code>, <code>策略</code>：</p>
+<pre><code>DOMAIN-SUFFIX, baidu.com, REJECT</code></pre>
+<p><strong>类型这里有很多种，</strong></p>
+<pre><code>HOST
+HOST-SUFFIX
+HOST-KEYWORD
+USER-AGENT
+IP-CIDR
+IP6-CIDR
+GEOIP</code></pre>
+<p><strong>策略默认有3种</strong>，其余的大家可以自行<a href="3846.html#%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B" target="_blank">建立策略组</a>；</p>
+<pre><code>PROXY（该策略对应为 QuantumultX 主页 - 左边第一个图标，该策略下方有你所有的节点分组）
+DIRECT
+REJECT</code></pre>
+<details>
+<summary>展开查看-PROXY策略</summary>
+<p><img src="../usr/uploads/2020/10/1472518177.jpg" alt="PROXY" /></p>
+</details>
+<p><strong>分流应用举例</strong></p>
+<pre><code>DOMAIN-SUFFIX, baidu.com, REJECT #拒绝域名后缀为baidu.com 的一切请求
+DOMAIN-SUFFIX, baidu.com, DIRECT #域名后缀为baidu.com 的一切请求均走 直连
+DOMAIN-SUFFIX, baidu.com, PROXY  #域名后缀为baidu.com 的一切请求均走 PROXY</code></pre>
+<p>OK，<strong>分流</strong>先到这里，更多示例可参考 NobyDa 的去广告<a href="https://github.com/NobyDa/Script/blob/master/QuantumultX/AdRule.list" target="_blank">分流规则</a>；<br />
+操作：打开 <code>Quantumult X</code> - <code>分流</code> - <code>添加</code></p>
+<h2 id="QuantumultX-重写">VII. QuantumultX-重写</h2>
+<p>我们先看一条示例，去YouTube App 视频开头广告，其中涉及两个要素，一个是<strong>hostname</strong>、其次是相应的<code>正则表达式</code>,<code>类型</code>,<code>参数</code>（我暂且称之为参数）；</p>
+<pre><code>hostname = *.googlevideo.com
+
+(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&amp;.+) url 302 $1$3
+^https?:\/\/[\w-]+\.googlevideo\.com\/.+&amp;(oad|ctier) url reject
+</code></pre>
+<p>OK，现在打开 <code>Quantumult X</code>，- <code>重写</code> - <code>添加</code>，有多达17个<code>类型</code>可选；</p>
+<details>
+<summary>展开查看-重写类型</summary>
+<p><img src="../usr/uploads/2020/10/2413144868.jpg" alt="Quantumult X - 重写 -类型.jpg" /></p>
+</details>
+<p>我们接下来会用到的重写<code>类型</code></p>
+<pre><code>url reject
+url 302
+url response-body</code></pre>
+<p>
+</div></div></p>
+<h2 id="开发者工具应用示例">VIII. 开发者工具应用示例</h2>
+<p>以手机片库网举例：</p>
+<pre><code>#####www.pianku.me 手机片库网去视频片头广告（倒计时10s改为0秒）
+hostname = *.pianku.me
+^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body pycount=10 response-body pycount=0</code></pre>
+<p>所有匹配<code>^https:?/\/\b..+pianku.\w{2,3}\b.*</code> 的请求（Request），如其 <code>response-body</code>（响应体）中包含<code>var pycount=10</code>的话，则将其替换为<code>var pycount=0</code>；</p>
+<p>我们要知道的是，一个网页打开时会发起无数请求，我们不妨使用 Chrome的<a href="https://developers.google.com/web/tools/chrome-devtools?hl=zh-cn" target="_blank" target="_blank" target="_blank">开发者工具</a> 查看下；</p>
+<p><img src="../usr/uploads/2020/10/3026605580.png" alt="手机片库网.png" /></p>
+<p>打开<code>m.pianku.me</code> 时多达 97个请求，每个请求对应一个<strong>URL</strong>（包含外部资源引用），基本上到这里你应该知道如何应对广告加载了；</p>
+<p><img src="../usr/uploads/2020/10/2176475754.png" alt="谷歌开发者工具.png" /></p>
+<p>随意打开某部电影，如 <code>https://m.pianku.me/py/lNWZl1WYxg2M_1.html?160311</code>，<br />
+我们就很容易找到片头广告对应在<code>Reponse</code>（响应体）的位置，将倒计时参数 <code>pycount=10</code> 改为 <code>pycount=0</code>即可；</p>
+<p>而在 Quantumult X 中 - <code>重写</code> - <code>类型</code>则是 <code>response-body</code>，对应的范例：</p>
+<pre><code>hostname = *.pianku.me
+^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body pycount=10 response-body pycount=0</code></pre>
+<h2 id="去网页广告的2种基本思路">IX. 去网页广告的2种基本思路</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-15fba28719bc3c467f34eec40b33ae9864" aria-expanded="true"><div class="accordion-toggle"><span>基本思路</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-15fba28719bc3c467f34eec40b33ae9864" class="panel-body collapse in">
+</p>
+<h3>禁止加载广告资源</h3>
+<p><strong>禁止加载广告资源</strong>；（使用分流规则的<code>Reject</code>对广告域进行<code>Request</code>禁止；使用重写<code>类型</code>如<code>reject</code>/<code>reject</code>/<code>reject-200</code>.../对匹配的广告域进行<code>Request</code>禁止；）；</p>
+<h3>重写网页资源</h3>
+<p><div class="tip inlineBlock success">本文文末为大家提供了两种重写网页资源的超便捷方法，通过嵌入<strong>JavaScript文件/CSS文件</strong>实现对网页资源的控制；</div>
+<p><strong>重写网页资源</strong>；重写在QuantumultX 对应 <code>Rewrite</code>、 <code>Reponse</code>响应（与之对应的是<code>Request</code>，即请求）内容，在Quantumult X 中<strong>响应</strong>又分为<code>response-body</code>/<code>script-response-body</code>/<code>script-response-header</code>...等等，每个类型都有其妙用；（本文所讨论的正式 <code>response-body</code>，改写HTTP响应体 ）</p>
+<p>我们应该知道的是<strong>每个网站网页都有其结构</strong>，网页内各个项目的长宽比例都是统一的，网页自顶部开始，标题，播放框，等等；</p>
+<p>广告会加载在哪个地方呢？是悬浮的还是固定长宽比例的，是引用的站内资源还是站外资源，这是在去广告过程中应该考量的；</p>
+<p>如果广告是动图？那么你应该找到这个动图对应的URL，分析该URL特点，使用分流或重写对其<code>Requeset</code>禁止，这样网页内就不会再出现该<code>Gif</code>了；</p>
+<p>
+</div></div></p>
+<h2 id="分流/重写在去广告上的应用场景">X. 分流/重写在去广告上的应用场景</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-be7aec082dfd2ba40e17307a5048893020" aria-expanded="true"><div class="accordion-toggle"><span>应用场景</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-be7aec082dfd2ba40e17307a5048893020" class="panel-body collapse in">
+</p>
+<p>使用分流（Filter）去广告，一去去全家；<br />
+使用重写（Rewrite）去广告，想<strong>去除</strong>哪里<strong>去除</strong>哪里；</p>
+<p><strong>分流去广告示例：</strong></p>
+<pre><code>##m.pianku.me/ 手机片库网
+DOMAIN-SUFFIX, xn--2qux23c9ziyrq.club, reject #整个域名下所有URL均禁止</code></pre>
+<p><strong>重写示例去广告</strong></p>
+<pre><code>##m.pianku.me/ 手机片库网
+hostname = xn--2qux23c9ziyrq.club
+xn--2qux23c9ziyrq.club.*?js url reject #禁止该域名下js加载</code></pre>
+<p>
+</div></div></p>
+<h2 id="找到广告">XI. 找到广告</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-e1312d50d67622f970ce429ba8e3805b34" aria-expanded="true"><div class="accordion-toggle"><span>找广告</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-e1312d50d67622f970ce429ba8e3805b34" class="panel-body collapse in">
+</p>
+<h3>开发者工具找广告</h3>
+<p>依然拿 <code>https://m.pianku.me/py/lNWZl1WYxg2M_1.html?160311</code>举例，这个动图广告，依然可以利用Chrome <a href="https://developers.google.com/web/tools/chrome-devtools?hl=zh-cn" target="_blank" target="_blank" target="_blank">开发者工具</a> 找出来（开发者工具又称为网页调试工具）：</p>
+<p><img src="../usr/uploads/2020/10/582632344.png" alt="开发者工具-Elements.png" /></p>
+<p><code>https://jpg.meitaixianlan.com/jpg/EoNhlD.gif</code></p>
+<h3>Adgurd 过滤日志找广告</h3>
+<p><strong>在本文一开始前，我们有说过 Adguard 中文过滤器是很强大的存在；</strong></p>
+<p>如下图，打开 <strong>Adguard - 浏览器扩展 - 打开过滤日志</strong> - 你可以看到很多很有趣的东西；<br />
+哪些<code>Request</code>（请求）被过滤掉了，哪些图片是广告图片，涉及的正则表达式（Adguard 式）是什么；</p>
+<p>为什么它可以这么强？因为 Adguard 有为数众多的志愿者，或者工作人员；</p>
+<p>其中涉及的 <strong><a href="../go/aHR0cHM6Ly9hZGd1YXJkLmNvbS96aF9jbi9ibG9nL2FkZ3VhcmQtZmlsdGVycy5odG1s" target="_blank">EasyList China</a></strong> ，包含绝大多数<strong>中文网络世界世界广告屏蔽规则</strong> ，<a href="../go/aHR0cHM6Ly9hZGJsb2NrcGx1cy5vcmcv" target="_blank">Adblock Plus</a> 在用，<a href="adguard.html" target="_blank">Adguard</a> 在用，<a href="1098.html" target="_blank">uBlock Origin</a> 等等一系列的浏览器去广告扩展都在用并在此基础上加强；</p>
+<p><img src="../usr/uploads/2020/10/2157822485.png" alt="片库网-adguard-中文过滤器.png" /><br />
+<img src="../usr/uploads/2020/10/1563585511.png" alt="片库网-adguard-中文过滤器-2.png" /></p>
+<p>找网站上的广告，博主十分建议通过 Adguard 的浏览器扩展，九牛二虎之力；</p>
+<h3>Quantumult X - 调试</h3>
+<p><img src="../usr/uploads/2020/10/1300354628.png" alt="Quantumult X 调试.png" /></p>
+<p>RT，开启<strong>调试</strong>后将会<strong>记录所有（完整）</strong>从按钮开启后的<strong>网络活动</strong>；<br />
+划重点，所有（完整）的 http/https <strong>请求</strong>与<strong>响应</strong>；</p>
+<p>
+</div></div></p>
+<h2 id="去除广告">XII. 去除广告</h2>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-0b322a817174fbe05ee79af23ea207a585" aria-expanded="true"><div class="accordion-toggle"><span>去广告</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-0b322a817174fbe05ee79af23ea207a585" class="panel-body collapse in">
+</p>
+<h3>举个例子</h3>
+<p>[collapse status="true" title="重写举例"]</p>
+<p><strong>禁止加载某张图片：以奈菲影视悬浮广告举例</strong> <a href="https://www.nfmovies.com/static/202010-2.jpg" target="_blank" target="_blank">https://www.nfmovies.com/static/202010-2.jpg</a> </p>
+<pre><code>hostname = www.nfmovies.com, hahah.com
+^https:?/\/.*?nfmovies.*?/static/202010-2.jpg url reject
+https://www.nfmovies.com/static/202010-2.jpg  url reject </code></pre>
+<p><img src="../usr/uploads/2020/10/3870097289.png" alt="重写举例-正则表达式应用" /></p>
+<p>以上两个写法都是可行的，符合正则；<br />
+<a href="../go/aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3JlZ2V4Lw==" target="_blank">在线正则表达式测试工具</a>；</p>
+<p><strong>替换某张图片：以奈菲影视悬浮广告举例</strong> <a href="https://www.nfmovies.com/static/202010-2.jpg" target="_blank" target="_blank">https://www.nfmovies.com/static/202010-2.jpg</a> </p>
+<pre><code>hostname = www.nfmovies.com, hahah.com
+^https:?/\/.*?nfmovies.*?/static/202010-2.jpg url 302 https://limbopro.com/usr/uploads/2020/10/2091577197.png</code></pre>
+<p>禁止加载 .js/.gif/.png/.php 同理，使用正则表达式匹配到相应的请求URL即可；</p>
+<p>另，表达式有无数种写法，匹配结果的精确程度各不相同；<br />
+懒惰匹配即可；</p>
+<p>参考：<a href="../go/aHR0cHM6Ly93d3cudzNjc2Nob29sLmNuL3JlZ2V4X3JtamMvcmVnZXhfcm1qYy1uNWEzMjhjbi5odG1s" target="_blank">正则表达式</a>；<br />
+参考：<a href="../go/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSFRUUC9TdGF0dXM=" target="_blank">HTTP 响应代码</a><br />
+<a href="../go/aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3JlZ2V4Lw==" target="_blank">在线正则表达式测试工具</a>；</p>
+<p>
+</div></div></p>
+<h3>分流与重写</h3>
+<p><strong>接上，找到广告了，怎么处理呢？</strong></p>
+<p>简单粗暴一点，直接使用分流进行<code>Reject</code>；</p>
+<pre><code>DOMAIN-SUFFIX, meitaixianlan.com, reject</code></pre>
+<p>OK，无痕模式再次打开 <code>https://m.pianku.me/py/lNWZl1WYxg2M_1.html?160311</code>，<br />
+发现广告还在？且还是会随着每次刷新进行变换的（随机性）。</p>
+<p>排查：进入 QuantumultX - 网络活动 - 点击中间的禁止符号：</p>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-92e25d591f230d3e7c31491f081f720091" aria-expanded="true"><div class="accordion-toggle"><span>展开查看-网络活动-禁止</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-92e25d591f230d3e7c31491f081f720091" class="panel-body collapse in">
+<br />
+<img src="../usr/uploads/2020/10/1805199936.png" alt="Fliter-禁止.png" /><br />
+<img src="../usr/uploads/2020/10/1233054568.jpg" alt="生效.jpg" /></p>
+<p>我们分流规则是生效的，但网页似乎还随机安排了另外一个广告（意思是原来的动图正下方还有另外一个动图甚至更多）；<br />
+仔细查看 <a href="https://developers.google.com/web/tools/chrome-devtools?hl=zh-cn" target="_blank" target="_blank" target="_blank">开发者工具</a> Elements 下内容，确实还有另外一个.gif，甚至更多（后来我们找到了，确实叠加了很多层，XSWL）；</p>
+<p>
+</div></div></p>
+<p>你要知道，网页上所有资源无论视频或图片以及该死的动图，都不可能无中生有，不发起<code>Request</code>（请求）就不可能会有<code>Response</code>（响应），然后我们继续排查；</p>
+<p>全局搜索，回到开发者工具，-<code>Network</code>，全局搜索 <code>meitaixianlan.com</code>，</p>
+<p><img src="../usr/uploads/2020/10/334976202.png" alt="Network-搜索.png" /></p>
+<p><img src="../usr/uploads/2020/10/3824063467.png" alt="Request-URL.png" /></p>
+<p>Request URL: <code>https://xn--2qux23c9ziyrq.club:4443/ty/x-3111-33.js</code></p>
+<p>得，就是你了；</p>
+<pre><code>######m.pianku.me/ 手机片库网
+DOMAIN-SUFFIX, xn--2qux23c9ziyrq.club, reject</code></pre>
+<p>自此，手机片库网去广告结束；</p>
+<p>参阅 <a href="../go/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSFRUUC9TdGF0dXM=" target="_blank">HTTP 响应代码</a>；</p>
+<p>[/collapse]</p>
+<h2 id="正则表达式的运用">XIII. 正则表达式的运用</h2>
+<p>以手机片库网去片头广告为例，如下：</p>
+<pre><code>#####www.pianku.me 手机片库网去视频片头广告（倒计时10s改为0秒）
+hostname = *.pianku.me
+^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body pycount=10 response-body pycount=0</code></pre>
+<p>其中表达式 <code>^https:?/\/\b..+pianku.\w{2,3}\b.*</code> 意为匹配 <strong>片库网</strong> 的相关链接请求，如 <code>https://m.pianku.me/tv/wNiNWarFDM.html</code>；</p>
+<p>打开 <a href="../go/aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3JlZ2V4Lw==" target="_blank">在线表达式测试</a> 测试：</p>
+<p><img src="../usr/uploads/2020/10/537363575.png" alt="在线表达式测试结果" /></p>
+<p><strong>匹配与替换</strong>：<code>pycount=10</code> 是用来匹配 <code>response-body</code>的，匹配到后则替换为 <code>pycount=0</code> ；</p>
+<p><code>response-body</code> 在这里是 <code>https://m.pianku.me/tv/wNiNWarFDM.html</code> 的响应体：响应体也就是<strong>网页的正文内容</strong>，一般在响应头中会用 Content-Length 来明确响应体的长度，便于浏览器接收，对于大数据量的正文信息，也会使用 chunked 的编码方式。</p>
+<p><a href="../go/aHR0cHM6Ly9tLnBpYW5rdS5tZS9weS9sTldaMUFUYjNvR01fMS5odG1sPzE2MDE2MQ==" target="_blank">https://m.pianku.me/py/lNWZ1ATb3oGM_1.html?160161</a> （异星灾变第一集播放页面） 的 <code>response-body</code>；</p>
+<p><div class="panel panel-default collapse-panel box-shadow-wrap-lg"><div class="panel-heading panel-collapse" data-toggle="collapse" data-target="#collapse-a736ab525320a527fd2e952207ca2d1c71" aria-expanded="true"><div class="accordion-toggle"><span>展开查看-response-body</span>
+<i class="pull-right fontello icon-fw fontello-angle-right"></i>
+</div>
+</div>
+<div id="collapse-a736ab525320a527fd2e952207ca2d1c71" class="panel-body collapse">
+</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-cn"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width,user-scalable=no"&gt;
+&lt;meta name="robots" content="none"&gt;
+&lt;title&gt;异星灾变_第01集在线播放-片库&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5a21a69d1b034aed24dcda25771e8135";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+&lt;/script&gt;
+&lt;link type="text/css" rel="stylesheet" href="/static/css/style2.css?0g2s4"/&gt;
+&lt;link type="text/css" rel="stylesheet" href="/static/css/icon.css?gdf"/&gt;
+&lt;link type="text/css" rel="stylesheet" href="/static/css/xtiper.css"/&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<span class="__cf_email__" data-cfemail="6309121606111a23504d564d52">[email&#160;protected]</span>/dist/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<span class="__cf_email__" data-cfemail="c4a7b6bdb4b0abe9aeb784f0eaf4eaf4">[email&#160;protected]</span>/crypto-js.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<span class="__cf_email__" data-cfemail="2b4d5e45474a51526b19051a0518">[email&#160;protected]</span>/dist/funlazy.min.js"&gt;&lt;/script&gt;
+&lt;script src="/static/js/function.js?fchh0"&gt;&lt;/script&gt;
+&lt;script src="/static/js/xtiper.min.js"&gt;&lt;/script&gt;
+&lt;script src="/static/js/TouchSlide.js?g11h"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<span class="__cf_email__" data-cfemail="5221253b22372012647c607c62">[email&#160;protected]</span>/swiper-bundle.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+&lt;div class="nav_top"&gt;
+&lt;div class="nav_menu"&gt;
+&lt;div class="logo"&gt;&lt;a href="/"&gt;&lt;img src="/logo.svg" alt="片库网"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="right menu_right"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span onclick="NightMode()" id="dark"&gt;&lt;i class="icon-moon"&gt;&lt;/i&gt;&lt;/span&gt;&lt;script type="text/javascript"&gt;if (mdark == "1"){$("#dark").html("&lt;i class=\"icon-sunny\"&gt;&lt;/i&gt;");}&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id="so-zk"&gt;&lt;i class="icon-search"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id="his-zk"&gt;&lt;i class="icon-time"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;!--&lt;li&gt;&lt;span&gt;&lt;i class="icon-user"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;--&gt;
+&lt;/ul&gt;
+
+&lt;div id="his"&gt;&lt;div class="his-a"&gt;&lt;div class="right" id="his-sq"&gt;关闭&lt;/div&gt;播放历史&lt;a title="清空观看记录" href="javascript:_GC();" class="his-gc"&gt;清空&lt;/a&gt;&lt;/div&gt;&lt;ul id="historys"&gt;&lt;div style="text-align:center;"&gt;您的观看历史为空&lt;/div&gt;&lt;/ul&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="search" id="search"&gt;&lt;form name="formsearch" id="formsearch" action="/s/go.php?" method="get" target="_self" autocomplete="off"&gt;&lt;input class="input zanpian_wd" name="q" type="text" id="keyword" placeholder="输入关键词" value=""&gt;&lt;div class="clear"&gt;&lt;/div&gt;&lt;input class="imgbt" type="submit" value="搜索"&gt;&lt;/form&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;nav id="mNav"&gt;&lt;ul class="swiper-wrapper"&gt;
+&lt;li class="swiper-slide"&gt;&lt;a href="/"&gt;&lt;span&gt;首页&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/mv/"&gt;&lt;span&gt;电影&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide active"&gt;&lt;a href="/tv/"&gt;&lt;span&gt;剧集&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/ac/"&gt;&lt;span&gt;动漫&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/trailers/"&gt;&lt;span&gt;预告&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/vipplay/"&gt;&lt;span&gt;解析&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="javascript:ourl()"&gt;&lt;span&gt;备用网址&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li class="swiper-slide"&gt;&lt;a href="/gbook/"&gt;&lt;span&gt;留言&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;
+&lt;script&gt;
+var mNav = new Swiper('#mNav', {
+    freeMode: true,
+    centeredSlides : true,
+    centeredSlidesBounds:true,
+    slidesPerView: 'auto',
+    speed: 50,
+    //slideToClickedSlide: true,
+    //touchReleaseOnEdges:true,
+    //slideActiveClass : 'active',
+        on: {
+        tap: function() {
+            $("#mNav  .active").removeClass('active');
+            $("#mNav .swiper-slide").eq(this.clickedIndex).addClass('active');
+            this.slideTo(this.clickedIndex,50);
+        },
+        init: function(){
+            var toindex = $("#mNav .active").index();
+            this.slideTo(toindex, 0);
+            mNav.update();
+        }
+    }
+});
+&lt;/script&gt;&lt;main&gt;
+&lt;div id="video" style="margin:0 -0.6rem;width:-webkit-fill-available;height:15rem;"&gt;&lt;/div&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<span class="__cf_email__" data-cfemail="f1999d82df9b82b1c1dfc0c5dfc2">[email&#160;protected]</span>/dist/hls.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/<span class="__cf_email__" data-cfemail="f5939983db9f86b5c4dbc0dbc5">[email&#160;protected]</span>/dist/flv.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"&gt;&lt;/script&gt;
+&lt;secion&gt;
+&lt;h2&gt;酷云&lt;span class="right"&gt;&lt;a class="next" href="/py/lNWZ1ATb3oGM_2.html"&gt;下一集&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul class="player"&gt;
+&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_1.html" class="on"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1ATb3oGM_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/secion&gt;
+&lt;div class="row"&gt;&lt;h2&gt;麻花云&lt;/h2&gt;&lt;ul class="player"&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_1.html"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EjMycWN_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;h2&gt;最大云&lt;/h2&gt;&lt;ul class="player"&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_1.html"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EDNlZmM_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;h2&gt;OK云&lt;/h2&gt;&lt;ul class="player"&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_1.html"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ1EzNmdWN_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;h2&gt;极速标清&lt;/h2&gt;&lt;ul class="player"&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_1.html"&gt;第01集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_2.html"&gt;第02集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_3.html"&gt;第03集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_4.html"&gt;第04集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_5.html"&gt;第05集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_6.html"&gt;第06集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_7.html"&gt;第07集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_8.html"&gt;第08集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_9.html"&gt;第09集&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="/py/lNWZ4k2YwYDa_10.html"&gt;第10集&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;secion&gt;
+&lt;h2&gt;剧集推荐&lt;/h2&gt;
+&lt;ul class="pic-list mg"&gt;
+&lt;li&gt;&lt;a href="/mv/wNnlzYzk2a.html" title="若能与你共乘海浪之上"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/1381b0000815cc00ee877.jpg" alt="若能与你共乘海浪之上" referrerpolicy="no-referrer" /&gt;&lt;span&gt;高清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;若能与你共乘海浪之上&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;爱情 奇幻 动画 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNnxmYxITM.html" title="神弃之地"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/138160001ff5518864b8d.jpg" alt="神弃之地" referrerpolicy="no-referrer" /&gt;&lt;span&gt;标清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;神弃之地&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;剧情 惊悚 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNnFGZ5kmN.html" title="刺猬索尼克"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/137ab0000bfa9641c6c2e.jpg" alt="刺猬索尼克" referrerpolicy="no-referrer" /&gt;&lt;span&gt;高清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;刺猬索尼克&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;动作 喜剧 冒险 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNnZDOhpWN.html" title="决战中途岛"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/1384e00005a8e1263a4f0.jpg" alt="决战中途岛" referrerpolicy="no-referrer" /&gt;&lt;span&gt;高清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;决战中途岛&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;剧情 战争 历史 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNnRWOywGa.html" title="大赢家"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/1379b000100ebca710c8c.jpg" alt="大赢家" referrerpolicy="no-referrer" /&gt;&lt;span&gt;标清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;大赢家&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;喜剧 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/mv/wNjNmZnFma.html" title="仲夏夜惊魂"&gt;&lt;article&gt;&lt;img src="/static/css/l.gif"  data-funlazy="https://p.pstatp.com/origin/137f100009371a5852768.jpg" alt="仲夏夜惊魂" referrerpolicy="no-referrer" /&gt;&lt;span&gt;高清&lt;/span&gt;&lt;/article&gt;
+&lt;h3&gt;&lt;b&gt;仲夏夜惊魂&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;剧情 恐怖 惊悚 &lt;/p&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/secion&gt;
+&lt;/main&gt;
+&lt;script&gt;
+const dp = new DPlayer({
+    container: document.getElementById('video'),
+    screenshot: true,
+    preload: 'metadata',
+    volume: 1.0,
+    video: {
+        url: ''
+    }
+});
+geturl('https://diaoshi.dehua-kuyun.com/20200903/14726_2451c732/index.m3u8');
+var astart = new Date(new Date(new Date().toLocaleDateString()).getTime()+24*60*60*1000-1);
+var begin = new Date();
+var aend = new Date(astart);
+var adt0 = (aend.getTime() - begin.getTime()) / 3600000;
+var pycount=10;
+if(getCookie('pyad')){
+if(getCookie('pyad')&gt;4){pycount=0;}
+var pynum=getCookie('pyad');pynum++;
+}else{
+var pynum=1;
+}
+setCookie('pyad',pynum,'/',adt0);
+function adremove(){$('#playad').remove();dp.play();}
+function jj(){
+if (pycount == 0){adremove();}else if(pycount&gt;0){
+$('#pp&gt;font').text(pycount);pycount -= 1;setTimeout(function () {jj(pycount);}, 1000);}
+if(pycount == 5){$('#pp').append('&lt;button onclick="adremove()" style="margin-left:1rem;font-size:0.8rem;margin-left:1rem;padding:0.1rem;"&gt;关闭广告&lt;/button&gt;');}
+}
+function geturl(url){if(url.indexOf('.m3u8')&gt;=0){dp.switchVideo({url: url});}else{pyjs(url);}}
+function pyjs(url){
+$('#video').append('&lt;div id="loading" style="text-align:center;z-index:20;background-color:black;top: 0;position: absolute;display: table;width:100%;height:100%;font-size:0.8rem;"&gt;&lt;div style="width:100%;height:100%;color:#999;display:table-cell;vertical-align: middle;"&gt;&lt;span class="tips"&gt;正在加载中，请稍候...&lt;/div&gt;&lt;/div&gt;');
+$.ajax({type:"post",url:'/playjson/index.php',data:{'url':url},dataType:'json',timeout:10000,success:function(data){
+if(data.code==200){
+var typer='auto';if(data.type=='hls'||data.type=='m3u8'){typer='hls';}dp.switchVideo({url: data.url,type:typer});
+}else{
+$('.tips').text('加载失败，请刷新重试或切换播放源');
+}},
+complete : function(XMLHttpRequest,status){
+if(status=='timeout'){
+$('.tips').text('请求超时，请刷新重试或切换播放源');
+}}});
+}
+dp.on('loadstart', function () {
+$.getScript('/ajax/historys/lNWZ1ATb3oGM_'+page+'/');
+$('#loading').remove();
+$('#video').append('&lt;div id="playad" style="background-color:black;z-index:99;top:0;position:absolute;width:100%;height:100%;"&gt;&lt;div id="pp" style="position:absolute;z-index:100;color:#fff;padding:0.8rem;right:0;"&gt;广告倒计时 &lt;font style="color:#f90;"&gt;&lt;/font&gt; 秒&lt;/div&gt;&lt;a href="https://www.yb2992.vip" target="_blank" style="background:url(https://p.pstatp.com/origin/1374a000205bdcde4096a.jpg) center center no-repeat;background-size:100% auto;width:100%;height:100%;display:block;"&gt;&lt;/a&gt;&lt;/div&gt;');
+jj();
+});
+var page=1;
+var arr={'2':['https://diaoshi.dehua-kuyun.com/20200903/14730_0364a269/index.m3u8','第02集'],'3':['https://diaoshi.dehua-kuyun.com/20200903/14731_e879fd88/index.m3u8','第03集'],'4':['https://diaoshi.dehua-kuyun.com/20200910/15603_353926cc/index.m3u8','第04集'],'5':['https://diaoshi.dehua-kuyun.com/20200910/15621_c50d6da8/index.m3u8','第05集'],'6':['https://diaoshi.dehua-kuyun.com/20200917/16416_ccd83ba6/index.m3u8','第06集'],'7':['https://diaoshi.dehua-kuyun.com/20200917/16451_1591de4f/index.m3u8','第07集'],'8':['https://diaoshi.dehua-kuyun.com/20200924/17199_9227cc27/index.m3u8','第08集'],'9':['https://diaoshi.dehua-kuyun.com/20200924/17204_c243626f/index.m3u8','第09集'],'10':['https://diaoshi.dehua-kuyun.com/20201001/17971_208710a9/index.m3u8','第10集'],};
+for (var keyname in arr){
+var lastkey=keyname;
+}
+function next(){
+dp.pause();//pycount=9;
+if(page&lt;lastkey){
+videotime=0;
+page++;geturl(arr[page]['0']);
+document.getElementsByTagName("title")['0'].innerText = '异星灾变'+arr[page]['1']+'-片库';
+history.replaceState('','','lNWZ1ATb3oGM_'+page+'.html');
+dp.notice('正在播放'+arr[page]['1'],'3000');
+$("[href]").each(function(){
+var href = $(this).attr('href');
+if(href.indexOf("lNWZ1ATb3oGM_"+(page-1)) &gt;= 0){
+$(this).removeClass("on");
+}
+if(href.indexOf("lNWZ1ATb3oGM_"+page) &gt;= 0){
+$(this).addClass("on");
+}
+});}
+if(page+1&gt;lastkey){$(".dplayer-next-icon").remove();}
+}
+$(".dplayer-play-icon").after('&lt;button class="dplayer-icon dplayer-next-icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="15 0 16 32"&gt;&lt;g transform="scale(0.03125 0.03125)"&gt;&lt;path d="M768 128v768h-128v-352l-320 320v-704l320 320v-352z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/button&gt;');
+$(".dplayer-next-icon").click(function(){
+    next();
+});
+dp.on('ended', function () {
+next();
+});
+var videotime=0;
+dp.on('timeupdate', function () {
+videotime++;
+if(videotime==20){
+$.getScript('/ajax/historys/lNWZ1ATb3oGM_'+page+'_time_'+Math.round(dp.video.currentTime)+'_'+Math.round(dp.video.currentTime/dp.video.duration*100)+'/');
+}else if(videotime&gt;150){
+videotime=0;
+}
+});
+setTimeout(function(){if(videotime==0){$.getScript('/ajax/historys/lNWZ1ATb3oGM_'+page+'_time_0_0/');}}, 5000);
+$(".player a,.next").click(function(){
+window.location.replace($(this).attr('href'));
+return false;
+});
+dp.on('fullscreen', function () {
+    screen.orientation.lock('landscape');
+});
+dp.on('fullscreen_cancel', function () {
+    screen.orientation.lock();
+});
+&lt;/script&gt;
+&lt;footer&gt;
+&lt;p&gt;本站所有资源均收集自互联网，没有提供影片资源存储，也未参与录制、上传。若本站收录的资源涉及您的版权或知识产权或其他利益，请附上版权证明邮件告知。&lt;/p&gt;
+&lt;p&gt;片库网 - www.pianku.tv&lt;/p&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+function check_webp(){return document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0;}
+FunLazy({
+placeholder: '/static/css/l.gif',
+beforeLazy: function(src){if(check_webp()){src=src.replace(".jpg",".webp");}return src;}
+});
+$(function() {$("#historys").html(historys());});
+(function(){
+if($(".input").val()!='') $('.clear').show();
+$('.clear').click(function(){$('.input').val('');$(this).hide();$(".input").focus();});
+$(".input").bind("input propertychange",function(event){
+$('.clear').show();
+if($(".input").val()=='') $('.clear').hide();
+});
+})();
+&lt;/script&gt;
+&lt;script src="/ajax/MyJs/"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>
+</div></div></p>
+<p><img src="../usr/uploads/2020/10/3454595621.png" alt="response-body 匹配与替换" /></p>
+<h2 id="验证表达式有效">XIV. 验证表达式有效</h2>
+<p>自己写的去广告规则是否生效？可以参考下文；</p>
+<p><div class="preview">
+<div class="post-inser post box-shadow-wrap-normal">
+<a href="12727.html" target="_blank" class="post_inser_a no-external-link">
+<div class="inner-image bg" style="background-image: url(../usr/uploads/2020/10/4070142549.jpg);background-size: cover;"></div>
+<div class="inner-content">
+<p class="inser-title">利用 Quantumult X / Surge 完美屏蔽YouTube App广告（神机规则）</p>
+<div class="inster-summary text-muted">
+via 春潮频道；序言工欲善其事必先利其器，我还是很期待大家可以主动学习本文中提到的一些额外知识（如果能自我扩展那...
+</div>
+</div>
+</a>
+
+</div>
+
+</div></p>
+<h2 id="通过嵌入JavaScript文件去网页广告的方法">XV. 通过嵌入JavaScript文件去网页广告的方法</h2>
+<p>在了解 重写类型response-body的用法 后，为了更灵活的清理网页广告，或许可以深入学习 HTML/CSS/Javascript 三驾马车，通过 response-body 重写方法，在网页<code>&lt;head&gt;</code> 元素标签后嵌入CSS/Javascript文件的方式更好的去除广告；</p>
+<p><strong>以下示例仅做思路参考，未来不会随时间更新</strong>；</p>
+<pre><code>^https:?/\/www.nfmovies.com.* url response-body &lt;head&gt; response-body &lt;head&gt;&lt;script type="text/javascript" nonce="7575a050f63648a69e15f9694a7" src="//limbopro.com/nfmovies.js"&gt;&lt;/script&gt;</code></pre>
+<p>在网页中嵌入 Javascript 文件参考案例：<a href="https://github.com/limbopro/Adblock4limbo/tree/main/Adguard" target="_blank">https://github.com/limbopro/Adblock4limbo/tree/main/Adguard</a></p>
+<h2 id="通过嵌入CSS文件去网页广告的方法">XVI. 通过嵌入CSS文件去网页广告的方法</h2>
+<pre><code>^https:?/\/www.nfmovies.com.* url response-body &lt;head&gt; response-body &lt;head&gt;&lt;link rel="stylesheet" href="https://limbopro.com/Adblock4limbo.css" target="_blank"  type="text/css"&gt;</code></pre>
+<p>以上是通过 <code>response-body</code> 重写嵌入 css 文件的示例，<a href="../Adblock4limbo.css" target="_blank">https://limbopro.com/Adblock4limbo.css</a> 大家可以打开看下内容，其目的是为了使样式 myui-ra-container 失效，以此使得该 div 元素无法显示；</p>
+<p>在网页中嵌入 CSS 文件参考案例：<a href="https://github.com/limbopro/Adblock4limbo/tree/main/CSS" target="_blank">https://github.com/limbopro/Adblock4limbo/tree/main/CSS</a></p>
+<h2 id="附注">XVII. 附注</h2>
+<p>更多精彩请关注我们的电报频道：<a href="https://t.me/limboprossr" target="_blank">https://t.me/limboprossr</a> 收取一手资讯；<br />
+专属讨论群组：<a href="https://t.me/Adblock4limbo" target="_blank" target="_blank">https://t.me/Adblock4limbo</a></p><hr class="content-copyright" style="margin-top:50px" /><blockquote class="content-copyright" style="font-style:normal"><p class="content-copyright">版权属于：毒奶 <br><p class="content-copyright">联系我们：<a class="content-copyright" href="../6.html" target="_blank" target="_blank">https://limbopro.com/6.html</a><br>毒奶搜索：<a class="content-copyright" href="../search.html" target="_blank" target="_blank">https://limbopro.com/search.html</a> <br>毒奶导航：<a class="content-copyright" href="../daohang/index.html" target="_blank" target="_blank">https://limbopro.com/daohang/index.html</a> </p></p><p class="content-copyright">本文链接：<a class="content-copyright" href="12782.html" target="_blank">https://limbopro.com/archives/12782.html</a></p><p class="content-copyright"><p class="content-copyright"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-Hans" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="../by-nc-sa.png"></a><br>本文采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-Hans" target="_blank" target="_blank" target="_blank">CC BY-NC-SA 4.0 许可协议</a>，转载或引用本文时请遵守许可协议，注明出处、不得用于商业用途！</p></blockquote></div>
+</div>
+</div>
+
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+(function () {
+    window.TypechoComment = {
+        dom : function (id) {
+            return document.getElementById(id);
+        },
+    
+        create : function (tag, attr) {
+            var el = document.createElement(tag);
+        
+            for (var key in attr) {
+                el.setAttribute(key, attr[key]);
+            }
+        
+            return el;
+        },
+
+        reply : function (cid, coid) {
+            var comment = this.dom(cid), parent = comment.parentNode,
+                response = this.dom('respond-post-12782'), input = this.dom('comment-parent'),
+                form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                textarea = response.getElementsByTagName('textarea')[0];
+
+            if (null == input) {
+                input = this.create('input', {
+                    'type' : 'hidden',
+                    'name' : 'parent',
+                    'id'   : 'comment-parent'
+                });
+
+                form.appendChild(input);
+            }
+
+            input.setAttribute('value', coid);
+
+            if (null == this.dom('comment-form-place-holder')) {
+                var holder = this.create('div', {
+                    'id' : 'comment-form-place-holder'
+                });
+
+                response.parentNode.insertBefore(holder, response);
+            }
+
+            comment.appendChild(response);
+            this.dom('cancel-comment-reply-link').style.display = '';
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea.focus();
+            }
+
+            return false;
+        },
+
+        cancelReply : function () {
+            var response = this.dom('respond-post-12782'),
+            holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+            if (null != input) {
+                input.parentNode.removeChild(input);
+            }
+
+            if (null == holder) {
+                return true;
+            }
+
+            this.dom('cancel-comment-reply-link').style.display = 'none';
+            holder.parentNode.insertBefore(response, holder);
+            return false;
+        }
+    };
+})();
+</script>
+<script type="text/javascript">
+var registCommentEvent = function() {
+    var event = document.addEventListener ? {
+        add: 'addEventListener',
+        focus: 'focus',
+        load: 'DOMContentLoaded'
+    } : {
+        add: 'attachEvent',
+        focus: 'onfocus',
+        load: 'onload'
+    };
+    var r = document.getElementById('respond-post-12782');
+        
+    if (null != r) {
+        var forms = r.getElementsByTagName('form');
+        if (forms.length > 0) {
+            var f = forms[0], textarea = f.getElementsByTagName('textarea')[0], added = false;
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea[event.add](event.focus, function () {
+                    if (!added) {
+                        var input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.name = '_';
+                            input.value = (function () {
+    var _WE7K = '4'//'v'
++'2cf'//'Pn'
++'c'//'c'
++//'p'
+'6d'+'e'//'7Fd'
++'e0'//'k'
++''///*'QCz'*/'QCz'
++'1d'//'X'
++//'h'
+'h'+//'B0'
+'c3'+'50'//'RMJ'
++//'P'
+'P'+''///*'P'*/'P'
++//'H'
+'719'+/* 'cS'//'cS' */''+''///*'a'*/'a'
++''///*'vvB'*/'vvB'
++//'ak'
+'d'+//'H23'
+'897'+//'OOr'
+'OOr'+//'YDO'
+'YDO'+''///*'T'*/'T'
++''///*'D'*/'D'
++//'55'
+'8b'+//'Hnc'
+'a9f'+//'N'
+'d64'+'ae'//'fYt'
+, _LSbp6x = [[4,5],[11,12],[15,16],[22,25],[22,25]];
+    
+    for (var i = 0; i < _LSbp6x.length; i ++) {
+        _WE7K = _WE7K.substring(0, _LSbp6x[i][0]) + _WE7K.substring(_LSbp6x[i][1]);
+    }
+
+    return _WE7K;
+})();
+                    
+                        f.appendChild(input);
+                        
+                        input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.name = 'checkReferer';
+                        input.value = 'false';
+                        
+                        f.appendChild(input);
+                        
+
+                        added = true;
+                    }
+                });
+            }
+        }
+    }
+};
+</script></div>
+<footer id="footer" class="app-footer" role="footer">
+<div class="wrapper bg-light">
+<span class="pull-right hidden-xs text-ellipsis">
+
+<a target="_blank" href="https://www.cloudflare.com"><img src="../usr/uploads/2021/07/2816325337.png" style="width: 50px;"></a>
+<a target="_blank" href="https://github.com/limbopro/"><img src="../usr/uploads/2021/07/3392286942.png" style="width: 40px;"></a>
+273.60 W 字符
+丨2人在线丨 
+Powered by <a target="_blank" href="http://www.typecho.org">Typecho</a>&nbsp;|&nbsp;Theme by <a target="_blank" href="https://www.ihewro.com/archives/489/">handsome</a>
+</span>
+<span class="text-ellipsis">&copy;&nbsp;2022 毒奶.inc Copyright&nbsp; 
+</span>
+</div>
+
+<script type="text/template" id="tmpl-customizer">
+          <div class="settings panel panel-default setting_body_panel" aria-hidden="true">
+              <button class="fix-padding btn btn-default no-shadow pos-abt border-radius-half-left"
+                      data-toggle="tooltip" data-placement="left" data-original-title="外观设置"
+                      data-toggle-class=".settings=active, .settings-icon=animate-spin">
+                  <i class="fontello fontello-gear settings-icon"></i>
+              </button>
+              <div class="panel-heading">
+                  <button class="pull-right btn btn-xs btn-rounded btn-danger " name="reset" data-toggle="tooltip"
+                          data-placement="left" data-original-title="恢复默认值" >重置</button>
+                  设置
+              </div>
+              <div class="setting_body">
+              <div class="panel-body">
+                  <# for ( var keys = _.keys( data.sections.settings ), i = 0, name; keys.length > i; ++i ) { #>
+                      <div<# if ( i !== ( keys.length - 1 ) ) print( ' class="m-b-sm"' ); else print(' id="mode_set"')
+                  #>>
+                          <label class="i-switch bg-info pull-right">
+                              <input type="checkbox" name="{{ keys[i] }}" <#
+                              print( ' value="'+handsome_UI.mode+data
+                              .defaults[keys[i]]+'"' )
+                              if ((data.defaults[keys[i]]=="auto" && handsome_UI.mode =="dark") || data
+                              .defaults[keys[i]] == true) print( ' checked="checked"' );
+                              #> /> 
+                                  <i></i>
+                          </label>
+
+                  <span> <# if(data.defaults[keys[i]]=="auto") print(LocalConst.DARK_MODE_AUTO); else if(data
+                      .sections.settings[keys[i]] == LocalConst.DARK_MODE) {print(LocalConst.DARK_MODE_FIXED)
+                      }else print(data.sections.settings[keys[i]]);#></span>
+       <# if ( i == ( keys.length - 1 ) ) {print( ' <small id="auto_info"'); if(data.defaults[keys[i]]!=="auto") print(' style="display:none"') ;print('><i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" data-original-title=""></i></small>')}; #>
+              </div>
+              <# } #>
+          </div>
+          <div class="wrapper b-t b-light bg-light lter r-b">
+              <div class="row row-sm">
+                  <div class="col-xs-4">
+                      <#
+                              _.each( data.sections.colors, function( color, i ) {
+                              var newColumnBefore = ( i % 5 ) === 4;
+                              #>
+                          <label class="i-checks block<# if ( !newColumnBefore ) print( ' m-b-sm' ); #>">
+                              <input type="radio" name="color" value="{{ i }}"<# if ( data.defaults['color'] === i ) print( ' checked="checked"' ); #> />
+                                  <span class="block bg-light clearfix pos-rlt">
+								<span class="active pos-abt w-full h-full bg-black-opacity text-center">
+									<i class="fontello fontello-check text-md text-white m-t-xs"></i>
+								</span>
+								<b class="{{ color.navbarHeader }} header"></b>
+								<b class="{{ color.navbarCollapse }} header"></b>
+								<b class="{{ color.aside.replace( ' b-r', '' ) }}"></b>
+							</span>
+                          </label>
+                          <#
+                                  if ( newColumnBefore && ( i + 1 ) < data.sections.colors.length )
+                          print( '</div><div class="col-xs-4">' );
+                              } );
+                              #>
+                          </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </script>
+<div class="topButton panel panel-default">
+<button id="goToTop" class="fix-padding btn btn-default no-shadow pos-abt hide  border-radius-half-left" data-toggle="tooltip" data-placement="left" data-original-title="返回顶部">
+<i class="fontello fontello-chevron-circle-up" aria-hidden="true"></i>
+</button>
+</div>
+</footer>
+</div>
+<script>
+                window.content_index_showTocToggle = true;
+                function content_index_toggleToc() {
+                    var tts = "显示";
+                    var tth = "隐藏";
+                    if (window.content_index_showTocToggle) {
+                        window.content_index_showTocToggle = false;
+                        document.getElementById("toc-content").style.display = "none";
+                        document.getElementById("content-index-togglelink").innerHTML = tts
+                    } else {
+                        window.content_index_showTocToggle = true;
+                        document.getElementById("toc-content").style.display = "block";
+                        document.getElementById("content-index-togglelink").innerHTML = tth
+                    }
+                }
+            </script>
+
+<style>
+        #mode_set{
+            display: none;
+        }
+    </style>
+
+<script>
+    SearchConfig = {
+        url: "https://limbopro.com/usr/plugins/Preference/cache/search.json"
+    }
+</script>
+<script src="../usr/themes/handsome/assets/js/function.min.js?v=7.3.12020081501"></script>
+<script src="../usr/themes/handsome/assets/js/core.min.js?v=7.3.12020081501"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        if (LocalConst.USE_CACHE) {
+            navigator.serviceWorker.addEventListener('controllerchange', function (ev) {
+                try {
+                    $.message({
+                        title:"检测到本地缓存需要更新",
+                        message:"<a href='12782.html#' onclick='window.location.reload();'>点击刷新页面</a>更新本地缓存",
+                        type:'warning',
+                        time: '300000'
+                    });
+                }catch (e) {
+                }
+            });
+        }
+    }
+
+</script>
+
+<script src="../usr/themes/handsome/assets/js/features/jquery.pjax.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../usr/themes/handsome/codecopy.js"></script>
+
+
+
+<script type="text/javascript">
+    </script>
+
+</body>
+</html>
+
